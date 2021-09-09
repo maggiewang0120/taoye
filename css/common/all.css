@@ -1,0 +1,44 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+
+}
+body{
+
+  background-image: url(../../images/background.png);
+  /* min-width: 850px; */
+}
+
+@font-face{
+font-family: "serif.black";
+src: url("../../fonts/NotoSerifTC-Black.otf");
+font-display: block;
+}
+@font-face {
+font-family: "serif.light";
+src: url("../../fonts/NotoSerifTC-Light.otf");
+font-display: block;
+}
+
+a{
+  text-decoration: none;
+  color:rgba(34, 50, 110, 1);
+}
+p{
+  font-family: "serif.light";
+
+  font-size: 1rem;
+}
+
+h2{
+  font-family: "serif.light";
+  font-size: 1.2rem;
+}
+
+h1{
+  font-family: "serif.black";
+  font-weight: bold;
+  font-size: 2rem;
+
+
+}

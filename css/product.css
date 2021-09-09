@@ -1,0 +1,369 @@
+@import "./common/all.css";
+@import "./common/footer.css";
+@import "./common/header.css";
+@font-face{
+font-family: "GwmFontSB";
+src: url("../fonts/GenWanMin-SB.ttc");
+font-display: swap;
+}
+@font-face {
+font-family: "GwmFontR";
+src: url("../fonts/GenWanMin-R.ttc");
+font-display: swap;
+}
+
+
+                                               /* banner */
+
+img{
+  width: 100%;
+}
+div.shop_banner_img div{
+  /* border: 1px solid red; */
+  font-family: "GwmFontSB";
+  position: absolute;
+  text-transform: uppercase;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing:8px;
+  left:30%;
+  bottom: 25px;
+  color: rgba(34, 50, 110, 1);
+}
+div.shop_banner_img div p{
+letter-spacing: 5px;
+font-size: 0.5rem;
+}
+                                      /* 麵包屑 */
+div.breadcrumb{
+display: inline-block;
+position: absolute;
+margin-top: 20px;
+/* border: 1px solid red; */
+padding: 5px 10px;
+margin-left: 200px;
+border-radius: 5px;
+min-width: inherit;
+}
+div.breadcrumb ol.breadcrumb_list{
+margin: 0;
+padding: 0;
+list-style: none;
+font-size: 0;
+font-family: "GwmFontSB"
+}
+div.breadcrumb ol.breadcrumb_list > li{
+/*   border: 1px solid red; */
+display: inline-block;
+color: gray;
+font-size: 1rem;
+}
+
+
+
+
+div.breadcrumb ol.breadcrumb_list > li::before{
+content: ">";
+font-size: 18px;
+color: gray;
+margin: 0 10px;
+}
+
+div.breadcrumb ol.breadcrumb_list > li:first-child::before{
+display: none;
+}
+
+
+
+div.breadcrumb ol.breadcrumb_list > li > a{
+/*   border: 1px solid blue; */
+text-decoration: none;
+display: inline-block;
+color: rgba(34, 50, 110, 1);
+}
+
+
+div.breadcrumb ol.breadcrumb_list > li > a:hover{
+text-decoration: underline;
+color: rgb(198 53 39);
+}
+
+                                      /* 側邊欄 */
+
+
+div.parent_container aside.aside{
+display: inline-block;
+text-align: center;
+/* background-color: rgb(217, 217, 214); */
+/* border: 1px solid blue; */
+width: 180px;
+height:1520px;
+padding:20px;
+}
+div.parent_container aside.aside a.button{
+
+display: block;
+/* border: 1px solid red; */
+margin:10px 0;
+position: relative;
+justify-content: center;
+}
+div.parent_container aside.aside h1{
+
+/* border: 1px solid blue; */
+position: absolute;
+bottom: 23px;
+left: 20%;
+font-family: "GwmFontSB";
+font-size: 1rem;
+color:white;
+}
+div.parent_container aside.aside div.option{
+/* background-image: url(../icon/brown_line.png); */
+/* border: 1px solid blue; */
+font-family: "GwmFontSB";
+line-height: 2;
+font-size: 0.5rem;
+}
+
+div.parent_container aside.aside img{
+filter: drop-shadow(2px 2px 2px rgb(85 57 37));
+padding: 10px;
+}
+
+div.parent_container aside.aside div.option a:hover{
+text-decoration: underline;
+color: rgb(198 53 39);
+font-family: "GwmFontSB";
+}
+
+                                   /* 商品區 */
+
+.parent_container{
+  /* background-color: rgb(217 217 214); */
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  /* border: 2px solid blue; */
+}
+
+
+div.container{
+  background-color: rgb(217 217 214);
+  /* border: 1px solid green; */
+  display: inline-block;
+  vertical-align: top;
+  width: 1000px;
+  margin: 80px 10px 0 30px;
+}
+
+div.product-img{
+  /* border:1px solid red; */
+  display: inline-block;
+}
+.product-img img{
+  display: inline-block;
+  /* border: 1px solid yellow; */
+  width: 450px;
+  height: 460px;
+  border-radius: 5px;
+}
+.product-img div img{
+  /* border: 1px solid red; */
+  display: inline-block;
+  width: 140px;
+  height: 140px;
+  margin: 5px 5px;
+  border-radius: 5px;
+}
+
+.product-ifo{
+  color:rgba(34, 50, 110, 1);
+  margin-top: 10px;
+  vertical-align: top;
+  width: calc(100% - 480px);
+  display: inline-block;
+  text-align: left;
+  /* border: 1px solid blue; */
+}
+.product-ifo h1{
+  font-family: "GwmFontSB";
+  font-size: 1.3rem;
+  line-height: 1.4;
+}
+.product-ifo ol li{
+  list-style: initial;
+  /* border: 1px solid red; */
+  margin:0px;
+}
+.product-ifo p, .product-ifo ol{
+  line-height: 1.4;
+  font-family: "GwmFontR";
+  font-size: 1rem;
+  white-space: pre-line;
+  text-align: left;
+}
+
+.product-ifo a.heart{
+  background-image: url("../icon/heart.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  /* border: 1px solid red; */
+  margin-left: 450px;
+}
+
+.product-ifo a.share img{
+  /* border: 1px solid red; */
+  display: inline-block;
+  vertical-align: top;
+  width: 20px;
+  height: 20px;
+}
+
+.product-ifo a.heart:active{
+background-image: url("../icon/solidheart.png");
+
+}
+.product-ifo a.buy{
+  display: inline-block;
+  font-family: "GwmFontR";
+  color: white;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: rgb(171 140 117);
+  box-shadow: 2px 1px 4px white inset,1px 1px 3px grey;
+  /* margin-top: 20px; */
+  margin-left: 80px;
+}
+
+.product-ifo img{
+  display: inline-block;
+  width: 30px;
+  vertical-align: middle;
+}
+.product-ifo a.buy:active{
+  font-family: "GwmFontR";
+  color: white;
+  border-radius: 10px;
+  padding: 15px;
+  background-color:  rgba(34, 50, 110, 1);
+  box-shadow: 2px 1px 4px black inset, 1px 1px 2px 1px white;
+}
+
+.custom_select{
+  display: inline-block;
+  /* border: 1px solid red; */
+  font-family: "GwmFontSB";
+  color: rgba(34, 50, 110, 1);
+  padding: 8px;
+  outline: none;
+  background: none;
+  background-color:white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px ;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.article{
+  vertical-align: top;
+  color:rgba(34, 50, 110, 1);
+  line-height: 1.4;
+  text-align: center;
+  width: 980px;
+  display: inline-block;
+  /* border: 1px solid purple; */
+}
+article.article h1{
+
+  background-image: url(../icon/brown_linevertical.png);
+  background-position: bottom;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: 40px 0;
+  letter-spacing: 2px;
+  text-align: center;
+  /* border: 1px solid black; */
+  height: 40px;
+  white-space: pre-line;
+}
+.article div{
+
+  justify-content: space-around;
+  position: relative;
+  /* border: 1px solid yellow; */
+  /* width: 500px; */
+  text-align: center;
+  font-family: "GwmFontSB";
+  margin-bottom: 30px;
+  display: block;
+}
+.introduce div.ul{
+  display: inline-block;
+  /* border: 1px solid black; */
+  width: 450px;
+  text-align: left;
+  /* margin-top: 80px; */
+  height: 400px;
+  vertical-align: top;
+}
+div.ul p{
+  text-indent: 1rem;
+  margin: 0 20px;
+}
+article.article div.introduce  div.ul  p, .introduce  div.ul ul{
+  font-size: 1rem;
+  /* border: 1px solid yellow; */
+  margin-top: 50px;
+}
+.introduce img{
+  display: inline-block;
+  /* border: 1px solid black; */
+  height: 400px;
+  width: 500px;
+}
+
+
+p.Gao{
+  white-space: pre-line;
+  line-height: 2;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  text-align: left;
+  /* border: 1px solid black; */
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 700px;
+}
+
+
+div.related{
+  /* border: 1px solid red; */
+  display: block;
+}
+
+.related img.arrow{
+  margin-bottom: 100px;
+  /* border: 1px solid red; */
+  width: 20px;
+}
+
+div.related div{
+  width:100%;
+  height: 250px;
+  /* border: 1px solid red; */
+  display: inline-block;
+  }
+
+div.related div img.product{
+  margin: 0 20px;
+  /* border: 1px solid black; */
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+}

@@ -1,0 +1,22 @@
+
+*{
+  margin: 0;
+}
+
+ul.slider{
+  margin: 0;
+  flex-direction: row;
+  gap: 10px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  background: darkgrey;
+
+}
+
+li{
+  width: 30%;
+  flex-grow: 1;
+  display:flex;
+  background-color: lightgrey;
+  color:white;
+}

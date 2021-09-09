@@ -1,0 +1,97 @@
+
+/* 整個頁籤及內容最外層區塊 */
+div.tab_container{
+  display: block;
+}
+
+/* 頁籤區塊 */
+div.tab_container div.tab_list_block{
+  padding-left: 80px;
+  padding-top: 50px;
+}
+
+/* 頁籤列表 */
+div.tab_container div.tab_list_block ul.tab_list{
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+div.tab_container div.tab_list_block ul.tab_list > li{
+  display: inline-block;
+}
+div.tab_container div.tab_list_block ul.tab_list > li > a{
+  font-family: "GwmFontSB";
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid rgba(34, 50, 110, 1);
+  padding: 8px 20px;
+  background-color: rgba(34, 50, 110, 1);
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+  color: white;
+  position: relative;
+  top: 1px;
+}
+
+
+
+div.tab_container div.tab_list_block ul.tab_list > li > a.-on{
+  /* border: 1px solid rgba(34, 50, 110, 1); */
+  background-color: rgb(217 217 214);
+  box-shadow: 2px 0px 2px, 1px 1px 2px white inset;
+  border-bottom: 1px solid rgb(217 217 214);
+  color: rgba(34, 50, 110, 1);
+}
+
+
+
+
+/* 頁籤內容區塊 */
+div.tab_container div.tab_contents{
+  display: block;
+  background-color: rgb(217 217 214);
+  /* border: 1px solid black; */
+  margin-top: 0px;
+}
+
+div.tab_container div.tab_contents div.tab{
+  padding: 10px;
+  display: none;
+}
+
+div.tab_container div.tab_contents div.tab.-on{
+  display: block;
+  width: 1000px;
+  /* border: 1px solid red; */
+  margin: 0px auto;
+  padding: 20px;
+}
+div.tab_container div.tab_contents div.tab.-on div.p{
+  display: block;
+  border: 1px solid rgba(34, 50, 110, 1);
+  box-shadow: 1px 1px 2px;
+  border-radius: 10px;
+  height: 300px;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+div.tab_container img{
+  height: 300px;
+  width: 500px;
+}
+div.tab_container div.p div {
+  vertical-align: top;
+  text-align: left;
+  line-height: 1.2;
+  white-space: pre-line;
+  display: inline-block;
+  /* border: 1px solid red; */
+  width: 450px;
+  font-size: 1rem;
+  font-family: "GwmFontSB";
+  color: rgba(34, 50, 110, 1);
+}
+div.tab_container div.p div p,.tab_container div.p div h2{
+  padding: 5px;
+}
