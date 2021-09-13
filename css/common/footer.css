@@ -34,6 +34,7 @@ div.footerlogo{
     display: none;
   }
 }
+
 footer > div{
   border: 1px solid white;
   width:230px;
@@ -51,7 +52,9 @@ footer > div{
     border-bottom: 1px solid white;
     margin-bottom: 10px;
   }
-
+  footer > div:last-child{
+    border-bottom: none;
+  }
 }
   iframe{
   height: 180px;
@@ -62,7 +65,7 @@ footer > div{
 
 footer div h3,div h3{
   text-align: left;
-  font-size: 1rem;
+  font-size: 1.3rem;
   display: inline-flex;
   /* border: 1px solid red; */
   flex-direction: column;
@@ -85,7 +88,7 @@ footer > div p,footer > div a{
   text-decoration: none;
   /* border: 1px solid white; */
   color: white;
-  font-size: 0.5rem;
+  font-size: 1rem;
   cursor: pointer;
 }
 @media screen and (max-width:767px){

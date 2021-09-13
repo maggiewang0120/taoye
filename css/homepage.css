@@ -1,5 +1,4 @@
 @import "./common/footer.css";
-@import "./common/font.css";
 @import "./common/all.css";
 @import "./common/header.css";
 
@@ -9,17 +8,36 @@ div.autoplay{
   width: 100%;
   margin: auto;
 }
-div.slide{
-  overflow: hidden;
-  display: inline-block;
-  border: 1px solid black;
-  width: 600px;
-  position: relative;
-  /* height: 600px; */
+
+@media (max-width:767px) {
+  div.autoplay{
+    border: 1px solid #c228ff;
+    width: 100%;
+    margin: auto;
+    max-height:500px ;
+  }
+
+  div.slide{
+    overflow: hidden;
+    display: inline-block;
+    border: 1px solid black;
+    height: 300px;
+    position: relative;
+  
+  }
 }
-div.slide img{
-width: 100%;
-}
+
+
+  div.slide{
+    overflow: hidden;
+    display: inline-block;
+    border: 1px solid black;
+    width: 600px;
+    position: relative;
+  }
+  div.slide img{
+  min-width: 100%;
+  }
 
 .slide h1{
   font-size: 1.5rem;
@@ -29,7 +47,6 @@ width: 100%;
   top:0%;
   right:5%;
   height: 100%;
-
   letter-spacing: 5px;
   writing-mode: vertical-lr;
 
@@ -40,14 +57,14 @@ button.slick-arrow{
   color: white;
   position: absolute;
   width: 10%;
-  border: 1px solid white;
+  /* border: 1px solid white; */
 
 }
 
 .slick-prev:before, .slick-next:before {
   width: 100%;
   font-size: 32px;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 
 button.slick-prev{
@@ -77,12 +94,30 @@ button.slick-next{
 
 
 
-/* 活動 */
+#go_top{
+  width: 50px;
+  height: 50px;
+  background: none;
+  z-index: 110;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  color: black;
+  background-color: white;
+  border-radius: 50%;
+  font-size: 20px;
+  line-height: 1;
+  outline: none;
+  cursor: pointer;
+}
+
+
+                                              /* ====================活動==================== */
 
 div.event{
   display: flex;
   flex-direction: column;
-  border:1px solid purple;
+  /* border:1px solid purple; */
 }
 
 
@@ -91,7 +126,7 @@ div.main_content{
   display: inline-flex;
   flex-direction: row;
   align-items: center;
-  border:2px solid green;
+  /* border:2px solid green; */
   width: 100%;
   justify-content:space-around;
 }
@@ -101,7 +136,7 @@ div.main_content{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border:1px solid green;
+    /* border:1px solid green; */
     width: 100%;
   }
 }
@@ -151,18 +186,20 @@ div.main_content{
 .card{
   position: relative;
   display: block;
-  border:1px solid yellow;
+  /* border:1px solid yellow; */
   margin: 20px;
   font-size: 0;
   /* width: 30%; */
   overflow: hidden;
+  
 }
 
 @media screen and (max-width:767px){
   .card{
     display: flex;
-    width: 100%;
+    width: 90%;
     overflow:visible;
+    
   }
 }
 
@@ -178,7 +215,7 @@ div.eve{
   text-align: left;
   padding: 10px;
   display: block;
-  border:1px solid brown;
+  /* border:1px solid brown; */
   font-size: 1rem;
   width: 100%;
   white-space: pre-line;
@@ -221,7 +258,7 @@ div.eve{
   }
 }
 
-.eve .sign_up{
+.eve .eve_sign_up{
 font-family: "serif.black";
 align-self: flex-end;
 display: inline-flex;
@@ -238,7 +275,9 @@ display: inline-flex;
 
 
 
-/* 文章 */
+
+
+/* ==========================文章 ========================== */
 .container{
   display: block;
 }
@@ -255,7 +294,7 @@ section.content{
   section.content{
     display: flex;
     flex-direction: column;
-
+    align-items: center;
   }
 }
 
@@ -286,23 +325,27 @@ section.content{
    align-self: center;
 }
 
-article a{
+.content article a{
   border:1px solid green;
+  position: relative;
   height: 100%;
   width: 50%;
   overflow:hidden;
 }
 @media screen and (max-width:767px) {
-  article a{
+  .content article a{
     display: flex;
-    width: 100%;
+    min-width: 100%;
+    height: 100%;
     margin: 0 auto;
   }
 }
 
 
-article a img{
-  height: 100%;
+.content article a img{
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
   margin: 0 auto;
 }
 
@@ -319,8 +362,8 @@ section.content article {
 
 @media screen and (max-width:767px) {
   section.content article{
-    height: 100%;
-    width:100%;
+    height: 0%;
+    width:90%;
     margin: 10px 0;
     flex-direction: column;
   }
@@ -329,13 +372,16 @@ section.content article {
 
 section.content article div{
    width: 50%;
+   display: flex;
+   flex-direction: column;
+
  /* border: 1px solid blue; */
 }
 
 @media screen and (max-width:767px) {
   section.content article div{
    width: 100%;
-   border: 1px solid blue;
+   /* border: 1px solid blue; */
   }
 }
 
@@ -355,7 +401,6 @@ section.content article > div p{
  font-family: "serif.light";
  font-size: 1rem;
  /* border: 1px solid black; */
-
  display: -webkit-box;
  -webkit-box-orient: vertical;
  -webkit-line-clamp: 6;
@@ -365,17 +410,21 @@ section.content article > div p{
  text-indent:2rem;
  line-height: 1.5;
  white-space: normal;
-
 }
 
- a.seemore{
-  font-weight: bold;
-  display: inline-block;
-  border: 1px solid blue;
+/* ====================seemore================ */
+ button.seemore{
+  color: aliceblue;
+  cursor: pointer;
+  display: flex;
+  border: none;
+  background: none;
+  justify-content: right;
+  font-family: "serif.black";
   text-align: right;
-  transform: translateX(0);
+  border-radius: 10px;
+  padding: 10px;
 }
-
 
 
 @media screen and (max-width:767px){
@@ -384,7 +433,7 @@ section.content article > div p{
     padding: 15px;
     margin: 0 auto;
     display: block;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     /* display: block; */
     width: 100%;
   }
@@ -403,14 +452,7 @@ section.content article > div p{
 
 
 
-
-
-
-
-
-/* 關於我們 */
-
-
+/* ======================關於我們========================== */
 
 section.aboutus{
   background-image: url("../images/content_about us shop.jpg");
@@ -422,7 +464,7 @@ section.aboutus{
 
 
 .aboutus img{
-  margin-right: 20px;
+  
   width:30%;
 }
 
@@ -430,7 +472,7 @@ section.aboutus{
 section.content .main_content{
   display: block;
   /* margin: 30px 30px; */
-  width: 90%;
+  width: 80%;
   padding: 30px;
   margin: 30px auto;
   border-radius: 10px;
@@ -439,17 +481,21 @@ section.content .main_content{
 }
 
 section.content .main_content_aboutus {
-
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px ;
   /* border: 1px solid blue; */
   text-align: left;
-  display: inline-block;
-  width: 60%;
+  width: 80%;
 }
 .main_content_aboutus p{
- font-family:"serif.light";
- color: rgba(34, 50, 110, 1);
- letter-spacing: 0.1px;
- line-height: 1.7;
+  
+  width: 100%;
+  font-family:"serif.light";
+  color: rgba(34, 50, 110, 1);
+  letter-spacing: 0.1px;
+  line-height: 1.7;
 }
 .main_content_aboutus h2,.main_content_aboutus h1{
  font-family:"serif.black";
@@ -472,25 +518,26 @@ section.content .main_content_aboutus {
   }
 }
 
-.timeline{
-  margin: 200px auto;
-  display: flex;
-  width: 100%;
 
+/* ======================時間軸========================== */
+
+
+
+.timeline{
+  margin: 100px auto;
+  display: flex;
+  /* width: 100%; */
   flex-direction: row;
-  height: 1000px;
-  /* border: 2px solid blue; */
-  position: relative;
-  /* background-image: url(../icon/blueline.png);
-  background-position:left;
-  background-repeat: no-repeat;
-  background-size: contain; */
+  /* border: 2px solid blue;  */
+
 }
+
+
+
 .timeline_content{
   display: inline-flex;
   flex-direction: column;
-  justify-content: space-around;
-  /* border: 2px solid green; */
+  /* justify-content: space-around; */
 }
 
 .timeline_content .outer_history{
@@ -500,45 +547,121 @@ section.content .main_content_aboutus {
 }
 
 
-.timeline_content div{
+.history{
   display: flex;
-  align-items: center;
-  flex-grow: 1;
-  width: 100%;
-  border: 1px solid yellow;
-  justify-content: flex-start;
-  margin: 0 auto;
+  /* flex-wrap: wrap; */
+  /* align-items: center; */
 
+  width: 100%;
+  /* border: 1px solid orange; */
+  /* justify-content: flex-start; */
 }
 
-.history ul{
-  font-family: "serif.black";
+
+
+.history_maincontent{
   display: flex;
   flex-direction: column;
+  
+}
 
+
+
+.history_maincontent div{
+  justify-content:space-around;
+  margin-bottom: 20px;
+  display: flex;
+  border-bottom: 1px solid rgba(34, 50, 110, 1);
+
+}
+
+.history_maincontent div:last-child{
+  border-bottom: none;
+}
+
+.history_maincontent div:nth-child(2){
+  flex-direction: row-reverse;
+}
+
+@media (max-width:767px) {
+
+
+    .history_maincontent div{
+      align-items: center;
+      flex-direction: column;
+      
+    }
+
+    .history_maincontent div:nth-child(2){
+      flex-direction: column;  
+    }
+   
+}
+
+
+
+/* ===============文字================ */
+
+.history_maincontent div ul{
+  color:rgba(34, 50, 110, 1);
+  font-size: 1.5rem;
+  list-style:inside;
+  width: 50%;
+  white-space:pre-line;
+  font-family: "serif.black";
   text-align: left;
-  height: 100%;
-  width: 50%;
-  border: 2px solid blue;
+  padding-left: 0mm;
+  letter-spacing: 1.6px;
+  line-height: 1.5;
+  
 }
-.history p{
-  text-indent: 13px;
+
+
+.history_maincontent div ul p{
+  color: black;
   font-family: "serif.light";
-  height: 100%;
-  border: 2px solid blue;
-  width: 50%;
+  font-size: 1rem;
 }
+
+@media (max-width:767px) {
+  .history_maincontent div ul{
+    width: 90%;
+  }
+}
+
+
+
+
+
+
+.history_maincontent  .history_icon{
+  display: inline-flex;
+  width: 13%;
+  align-self: center;
+  /* border: 2px solid blue; */
+  
+}
+
+
+
+.year h1{
+  /* border: 1px solid yellow; */
+  position: sticky;
+  top: 48%;
+}
+
+
 
 .timeline .line{
   background-image: url(../icon/blueline.png);
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: contain;
   background-position: center;
 }
 .timeline .line img{
   margin: 0 auto;
   position: sticky;
-  top: 100px;
+  top: 50%;
   left: 10px;
-  width: 20px;
+  width: 10px;
 }

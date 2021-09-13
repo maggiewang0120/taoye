@@ -6,25 +6,24 @@ body{
 }
 
 
-
 div.header{
   border : 1px solid green;
   display: flex;
   width: 100%;
   align-items: center;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   background-color: rgb(217, 217, 214);
-  position: relative;
+  position: sticky;
   z-index: 110;
   top:0;
+  
 }
 
 
 div.header.-scroll-down{
   flex-direction: row;
   padding-left: 20px;
-  position: fixed;
   box-shadow: 1px 1px 2px grey;
 }
 
@@ -34,13 +33,9 @@ div.header.-scroll-down{
     display: inline-flex;
     background-color: rgb(217, 217, 214);
     align-items: flex-start;
-    justify-content: flex-start;
-
+    justify-content: center;
+    flex-wrap: wrap;
     flex-direction: row;
-  }
-
-  div.header.-scroll-down{
-
   }
 }
 
@@ -89,7 +84,7 @@ a.logo img{
   /* border: 2px solid yellow; */
 
   display:  flex;
-  width: 100%;
+  width: 80%;
   justify-content: space-evenly;
   align-items: center;
   margin-bottom:10px;
@@ -98,12 +93,21 @@ a.logo img{
 
 
 @media screen and (min-width:768px){
+
+
   .global_nav{
     display: flex !important;
   }
 }
 
 @media screen and (max-width:767px){
+
+  .main_nav{
+    width:70%;
+    display: flex;
+    flex-direction: row;
+  }
+
   .global_nav{
     border: 1px solid blue;
     width: 100%;
@@ -150,12 +154,11 @@ span.title{
   .hamburger_icon{
     display: inline-block;
     border:none;
-    width: 42px;
+    width: 45px;
     height: 42px;
     position: relative;
     cursor: pointer;
     outline: none;
-
     background: none;
   }
 
@@ -261,66 +264,242 @@ span.title > ul {
 }
 
 
-span.title a{
-  flex-grow:1;
-  text-decoration: none;
-}
-
-
-span.title ul li a{
-  font-family: "serif.light";
-  font-size: 1rem;
-}
-
-
-
-span.title ul li a.options:hover{
-text-decoration: underline;
-color: rgb(198 53 39);
-font-family: "serif.light";
-}
-
-span.title ul li{
-  /* border: 1px solid red; */
-  display: inline-block;
-  padding: 0 8px;
-  list-style: none;
-}
-
-@media screen and (max-width:767px){
-  span.title ul li{
-  padding: 0 ;
+  span.title a{
+    flex-grow:1;
+    text-decoration: none;
   }
-}
+
+
+  span.title ul li a{
+    font-family: "serif.light";
+    font-size: 1rem;
+  }
+
+/* ===============登入light box=============== */
+
+  .sign_up{
+    z-index: 120;
+    /* border: 1px solid red; */
+    position: fixed;
+    top: 0px;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: hsla(0, 0%, 0%, .5);
+    display: none;
+  }
 
 
 
-/* 搜尋框 */
- .global_nav div.search {
-  border: 1px solid blue;
-  display: inline-flex;
-  justify-content: space-around;
-  width: 20%;
-}
-.search input{
-  font-family: "serif.black";
-  width: 100%;
-}
+    .sign_up article{
+      padding: 30px;
+      background-color: rgb(217, 217, 214);
+      box-shadow: 0 0 10px rgb(59, 55, 42);
+      position: absolute;
+      top: 50%;
+      left:50%;
+      transform: translate(-50%, -50%);
+      
+      width: 500px;
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
- .global_nav .search img{
-   width: 15%;
+    .sign_up article button.close{
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: none;
+      /* border: none; */
+      
+    }
+
+    article.sign_up_content button{
+      position: relative;
+      width: 25px;
+      height: 25px;
+      border: none;
+      cursor: pointer;
+    }
+    .sign_up article div h1{
+      display: flex;
+      border-bottom:1px solid grey;
+      width: 100%;
+      justify-content: center;
+    }
+    article.sign_up_content div p{
+      
+      margin: 10px 0;
+      
+    }
+    article.sign_up_content div{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      border: 1px solid plum;
+      font-family: "serif.light";
+      margin: 10px 0;
+
+    }
+
+    article.sign_up_content div .btn_return{
+      cursor: pointer;
+    }
+
+    article.sign_up_content div.logo{
+      /* border: 1px solid orange; */
+      max-width: 30%;
+      font-size: 0;
+    }
+
+    button.close span.-hr{
+      height: 2px;
+      width: 100%;
+      background-color: white;
+      display: inline-block;
+      position: absolute;
+      left: 0;
+     
+    }
+
+    button.close span.-top{   
+      
+      transform: rotate(45deg);
+    }
+    button.close span.-bottom{
+      
+      transform: rotate(-45deg);
+
+    }
+  .sign_up article form{
+    /* border: 1px solid yellow; */
+    display: flex;
+    width: 100%;
+    flex-direction:column ;
+    align-items: center;
+  }
+
+  .sign_up article form label{
+    font-family: "serif.black";
+    font-size: 1rem;
+    display: flex;
+    
+    /* border: 1px solid red; */
+    margin: 10px 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .sign_up article form input{
+    font-family: "serif.light";
+    
+    margin: 10px 0;
+    width: 70%;
+    height: 40px;
+  }
+
+  .sign_up article form button{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "serif.black";
+    font-size: 1rem;
+    padding: 20px;
+    width: 70%;
+  }
+  div #forgot_password{
+    cursor: pointer;
+  }
+
+
+
+  span.title ul li a.options:hover{
+  text-decoration: underline;
+  color: rgb(198 53 39);
+  font-family: "serif.light";
+  }
+
+  span.title ul li{
+    /* border: 1px solid red; */
+    display: inline-block;
+    padding: 0 8px;
+    list-style: none;
+  }
+
+  @media screen and (max-width:767px){
+    span.title ul li{
+    padding: 0 ;
+    }
+  }
+
+
+
+
+
+
+  /*============================== 搜尋框 ==============================*/
+
+  .search{
+    /* border: 1px solid blue; */
+    display: inline-flex;
+    justify-content: space-around;
+    width: 20%;
+  }
+  .search input{
+    font-family: "serif.black";
+    width: 80%;
+  }
+
+  .search img.input_search{
+    width: 15%;
+  }
+
+ .search .shoppingcar{
+   width: 20%;
+ }
+
+
+ @media screen and (min-width:768px){
+  .search_scrolldown{
+    display: none;
+  }
  }
 
 @media screen and (max-width:767px){
-  .global_nav div.search{
-    display: inline-flex;
+  .search{
+    display: none;
     width: 50%;
  }
   .search input{
     width: 100%;
   }
 
-  .global_nav .search img{
-    width: 10%;
+
+
+
+  .search_scrolldown{
+    border: 1px solid orange;
+    display: inline-flex;
+    align-items: center;
+    justify-content: right;
+    width:100% ;
+
   }
+
+  .search_scrolldown input{
+    font-family: "serif.black";
+    width: 30%;
+    height: 60%;
+  }
+  
+   .search_scrolldown .input_search{
+      width: 5%; 
+   }
+  
+   .search_scrolldown .shoppingcar{
+     width: 5%;
+   }
 }

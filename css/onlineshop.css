@@ -1,160 +1,274 @@
 @import "./common/all.css";
 @import "./common/footer.css";
 @import "./common/header.css";
-@font-face{
-font-family: "GwmFontSB";
-src: url("../fonts/GenWanMin-SB.ttc");
-font-display: swap;
-}
-@font-face {
-font-family: "GwmFontR";
-src: url("../fonts/GenWanMin-R.ttc");
-font-display: swap;
+
+
+/* 
+img{
+  max-width: 100%;
+} */
+div.shop_banner_img{
+  width: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
-img{
-  width: 100%;
+div.shop_banner_img img{
+  min-width: 100%;
 }
-div.shop_banner_img{
-  position: relative;
-}
+
 div.shop_banner_img div{
+  
   /* border: 1px solid red; */
-  font-family: "serif";
+  font-family: "serif.light";
   position: absolute;
   text-transform: uppercase;
   line-height: 1.4;
   text-align: center;
   letter-spacing:8px;
   left:30%;
-  bottom: 25px;
+  bottom: 35px;
   color: rgba(34, 50, 110, 1);
+  transition: all 1s;
 }
+div.shop_banner_img h1 {
+  font-size: 3rem;
+}
+
 div.shop_banner_img div p{
 letter-spacing: 5px;
 font-size: 0.5rem;
 }
+@media (max-width:767px) {
+  div.shop_banner_img div{
+    color: aliceblue;
+    writing-mode: vertical-lr;
+    left:10%;
+    bottom: 15px;
+  }
+
+  div.shop_banner_img h1 {
+    letter-spacing: 5px;
+    font-size: 2rem;
+    }
+}
+
                                       /* 麵包屑 */
 div.breadcrumb{
-display: block;
-position: absolute;
-margin-top: 20px;
-/* border: 1px solid red; */
-padding: 5px 10px;
-margin-left: 200px;
-border-radius: 5px;
+  display: flex;
+  margin-top: 20px;
+  border: 1px solid red;
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 div.breadcrumb ol.breadcrumb_list{
-margin: 0;
-padding: 0;
-list-style: none;
-font-size: 0;
-font-family: "GwmFontSB"
+  display: flex;
+  flex-direction: row;
+  /* border: 1px solid rgb(66, 48, 121); */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family:"serif.black";
+
 }
 div.breadcrumb ol.breadcrumb_list > li{
-/*   border: 1px solid red; */
-display: inline-block;
-color: gray;
-font-size: 1rem;
+  /* border: 1px solid red; */
+  display: inline-flex;
+  color: gray;
+  font-size: 1rem;
 }
 
 
 
 
 div.breadcrumb ol.breadcrumb_list > li::before{
-content: ">";
-font-size: 18px;
-color: gray;
-margin: 0 10px;
+  content: ">";
+  font-size: 18px;
+  color: gray;
+  margin: 0 10px;
 }
 
 div.breadcrumb ol.breadcrumb_list > li:first-child::before{
-display: none;
+  display: none;
 }
 
 
 
 div.breadcrumb ol.breadcrumb_list > li > a{
-/*   border: 1px solid blue; */
-text-decoration: none;
-display: inline-block;
-color: rgba(34, 50, 110, 1);
+  /*   border: 1px solid blue; */
+  text-decoration: none;
+  display: inline-block;
+  color: rgba(34, 50, 110, 1);
 }
 
 
 div.breadcrumb ol.breadcrumb_list > li > a:hover{
-text-decoration: underline;
-color: rgb(198 53 39);
+  text-decoration: underline;
+  color: rgb(198 53 39);
 }
 
-                                      /* 側邊欄 */
+                              
+  /* 側邊欄 */
 
-div.parent_container aside.aside, div.parent_container main.main{
-display: inline-block;
-vertical-align: top;
-font-size: 1rem; /* 16px */
-box-sizing: border-box;
-
-}
-div.parent_container aside.aside{
-text-align: center;
-background-color: rgb(217, 217, 214);
-/* border: 1px solid blue; */
-width: 180px;
-padding:20px;
-}
-div.parent_container aside.aside a.button{
-
-display: block;
-/* border: 1px solid red; */
-margin:10px 0;
-position: relative;
-justify-content: center;
-}
-div.parent_container aside.aside h1{
-
-/* border: 1px solid blue; */
-position: absolute;
-bottom: 23px;
-left: 20%;
-font-family: "GwmFontSB";
-font-size: 1rem;
-color:white;
-}
-div.parent_container aside.aside div.option{
-/* background-image: url(../icon/brown_line.png); */
-/* border: 1px solid blue; */
-font-family: "GwmFontSB";
-line-height: 2;
-font-size: 0.5rem;
+  div.parent_container{
+    border: 1px solid greenyellow;
+    display: flex;
+    position: relative;
+  }
+  
+   @media (max-width:767px){
+    div.parent_container{
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  
+  div.parent_container aside.aside{
+    min-width: 100px;
+    width: 20%;
+    border: 1px solid blue;
+    background-color: rgb(217, 217, 214);
+    text-align: center;
+    display: inline-flex;
+    flex-direction: column;
+    vertical-align: top;
+    font-size: 1rem; /* 16px */
+    
+  }
+@media (min-width:768px) {
+  .parent_container .aside .btn_drawer{
+    border: 1px solid tomato;
+    display: none;
+ }
 }
 
-div.parent_container aside.aside img{
-  filter: drop-shadow(2px 2px 2px rgb(85 57 37));
-  padding: 10px;
+@media (max-width:767px) {
+  div.parent_container aside.aside{
+    height: 100vh;
+    position: fixed;
+    width: 30%;
+    top: 44px;
+    z-index: 110;
+    /* overflow-y: scroll; */
+    transform: translateX(-100%);
+    transition: transform ease-in .2s;
+  }
+
+  div.parent_container aside.aside.-on{
+    transform: translateX(0%);
+    
+  }
+  .parent_container .aside .btn_drawer{
+    color: white;
+    width: 40px;
+    background: none;
+    background-color: rgb(217, 217, 214, .1);
+    position: absolute;
+    right: -40px;
+    top:50%;
+    height: 30px;
+    text-align: center;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 5px 0 5px rgba(23, 23, 54, 0.6);
+  }
+  button.btn_drawer span.-hr{
+    height: 2px;
+    width: 50%;
+    background-color: white;
+    display: inline-block;
+    position: absolute;
+    left: 10;
+
+  }
+
+  button.btn_drawer span.-hr.-top{
+    top: 25%;
+  }
+  button.btn_drawer span.-hr.-middle{
+    top: 50%;
+  }
+  button.btn_drawer span.-hr.-bottom{
+    top: 75%;
+  }    
+    
+  
 }
 
-div.parent_container aside.aside div.option a:hover{
-text-decoration: underline;
-color: rgb(198 53 39);
-font-family: "GwmFontSB";
-}
+
+
+
+  div.parent_container .container{
+    width: 100%;
+    border: 2px solid rgb(255, 136, 0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* margin-left: 10%; */
+  }
+  
+ 
+  
+  div.parent_container aside.aside button{
+  display: inline-flex;
+  justify-content: center;
+  cursor: pointer;
+  background: none;
+  background-image: url("../icon/brown_button.png");
+  background-position:center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: white;
+  border: none;
+  font-family: "serif.black";
+  font-size: 1.2rem;
+  padding: 5px;
+  max-width: 100%;
+  }
+  
+  div.parent_container aside.aside div.option{
+  /* background-image: url(../icon/brown_line.png); */
+  /* border: 1px solid blue; */
+  font-family: "serif.black";
+  line-height: 2;
+  margin: 10px 0;
+  }
+  
+  
+  
+  div.parent_container aside.aside div.option a:hover{
+  transition: all .1s;
+  display: inline-block;
+  width: 100%;
+  background-color: white;
+  font-family: "serif.black";
+  }
 
                                       /* 商品區 */
 div.parent_container main.main{
-  /* border: 1px solid green; */
-  width: calc(100% - 200px - 20px);
-  margin: 60px 0 60px 0;
+  border: 1px solid green;
+  
 }
 
   .grid-container {
-  margin-left: 40px;
+  border: 1px solid red;
+  margin: 0 20px;
   display: grid;
   justify-content: center;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr ;
   gap: 50px 50px;
-
+  
 }
+
+@media (max-width:767px) {
+  .grid-container{
+    grid-template-columns: 300px ;
+    
+  }
+}
+
+
+
 .grid-item {
   overflow: hidden;
   border-radius: 5px;
@@ -171,17 +285,19 @@ div.parent_container main.main{
   height: 100%;
 }
 .grid-item p button{
-color: white;
-padding: 5px 10px;
-margin-top: 10px;
-box-shadow: 1px 1px 4px rgb(98 82 70),1px 1px 2px rgba(255, 250, 250, 1) inset;
-background-color: rgb(171 140 117);
-border-radius: 10px;
-border: none;
-}
+  font-family: "serif.light";
+  font-size: 1rem;
+  color: white;
+  padding:10px;
+  margin-top: 10px;
+  box-shadow: 1px 1px 4px rgb(98 82 70),1px 1px 2px rgba(255, 250, 250, 1) inset;
+  background-color: rgb(171 140 117);
+  border-radius: 10px;
+  border: none;
+  }
 a.grid-item p{
  line-height: 1.5;
- font-family: "GwmFontR";
+ font-family: "serif.black";
  font-size: 1rem;
  width: 100%;
  height: 45%;
