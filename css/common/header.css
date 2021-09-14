@@ -109,10 +109,9 @@ a.logo img{
   }
 
   .global_nav{
-    border: 1px solid blue;
-    width: 100%;
+    /* border: 1px solid blue; */
+    width: 90%;
     display: none;
-
   }
 
 }
@@ -227,12 +226,12 @@ span.title{
     font-size: 0.2rem;
 
   }
-  }
+}
 
 
 span.title > ul {
   position: absolute;
-
+  margin-bottom: 0;
   /* border: 1px solid black; */
   white-space: nowrap;
   top: 45px;
@@ -475,7 +474,7 @@ span.title > ul {
  }
   .search input{
     width: 100%;
-  }
+ }
 
 
 
@@ -486,12 +485,12 @@ span.title > ul {
     align-items: center;
     justify-content: right;
     width:100% ;
-
+    
   }
 
   .search_scrolldown input{
     font-family: "serif.black";
-    width: 30%;
+    width: 50%;
     height: 60%;
   }
   

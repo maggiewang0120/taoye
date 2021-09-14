@@ -1,6 +1,6 @@
 @import "./common/all.css";
 @import "./common/footer.css";
-@import "./common/header.css";
+/* @import "./common/header.css"; */
 
 
 /* 
@@ -262,9 +262,11 @@ div.parent_container main.main{
 
 @media (max-width:767px) {
   .grid-container{
-    grid-template-columns: 300px ;
-    
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 10px;
   }
+
+
 }
 
 
@@ -313,7 +315,26 @@ a.grid-item p{
   .grid-item:hover p{
    transform: translateY(0%);
 }
+  @media (max-width:767px) {
+  a.grid-item{
+    display: block;
+    overflow:hidden;
+    position: static;
+  }  
+  a.grid-item img{
+    
+    height: auto;
+  }
+  a.grid-item p{
+    transform: translateY(0);
+    position:relative;
+    height: 50%;
+  }
+  .grid-item p button{
+    padding:5px;
+  }
 
+} 
                                     /* pagination */
 div.pagination_block{
 display: block;
@@ -366,3 +387,4 @@ div.pagination_block > ul.pagination > li > a:hover{
 background-color: #e9ecef;
 color: #0056b3;
 }
+

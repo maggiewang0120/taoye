@@ -1,6 +1,18 @@
+
+
+
+div.blog_container{
+  background-color: rgb(217,217,214);
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
 .blog_select{
-  /* display: inline-flex; */
-  width: 140px;
+  display: inline-flex;
+  align-self: end;
+  width: 15%;
+  min-width: 180px; 
   /* border: 1px solid red; */
   font-family: "GwmFontSB";
   color: rgba(34, 50, 110, 1);
@@ -10,121 +22,105 @@
   background-color:white;
   border-radius: 10px;
   box-shadow: 1px 1px 1px ;
-  margin-left: 1000px;
+  
 }
-
-div.breadcrumb{
-display: block;
-position: absolute;
-margin-top: 20px;
-/* border: 1px solid red; */
-padding: 5px 10px;
-margin-left: 130px;
-border-radius: 5px;
-}
-div.breadcrumb ol.breadcrumb_list{
-margin: 0;
-padding: 0;
-list-style: none;
-font-size: 0;
-font-family: "GwmFontSB"
-}
-div.breadcrumb ol.breadcrumb_list > li{
-/*   border: 1px solid red; */
-display: inline-block;
-color: gray;
-font-size: 1rem;
-}
-
-div.breadcrumb ol.breadcrumb_list > li::before{
-content: ">";
-font-size: 18px;
-color: gray;
-margin: 0 10px;
-}
-
-div.breadcrumb ol.breadcrumb_list > li:first-child::before{
-display: none;
-}
-
-
-div.breadcrumb ol.breadcrumb_list > li > a{
-/*   border: 1px solid blue; */
-text-decoration: none;
-display: inline-block;
-color: rgba(34, 50, 110, 1);
-}
-
-div.breadcrumb ol.breadcrumb_list > li > a:hover{
-text-decoration: underline;
-color: rgb(198 53 39);
-}
-
-div.content{
-  margin-top: 50px;
-  display: flex;
+div.blog_container main{
+  border: 1px solid green;
+  display: inline-flex;
   flex-direction: column;
+  justify-content: center;
+  border: 1px ;
+  width: 100%;
 }
 
-div.content article img{
-  width: 400px;
-}
 
-div.content article {
-  border: 2px solid rgb(144, 119, 101);
-  box-shadow: 2px 2px 1px rgb(144, 119, 101);
+
+div.blog_container main article {
+  /* border: 2px solid rgb(231, 7, 7); */
   border-radius: 10px;
   display: inline-flex;
-  height: 280px;
-  color: white;
-  width: 1000px ;
-  align-items: center;
-  background-color: rgba(171, 140, 117,0.8);
-  margin: 20px auto;
-  overflow: hidden;
-}
-div.content article div{
-  display: inline-flex;
-  flex-flow: column;
-  /* border: 1px solid blue; */
+  flex-direction: column;
+  /* height: 280px; */
+  color: lightblack;
+  width: 80%;
+  height: auto;
+  margin: 80px auto;
+  
 }
 
-div.content > article > div h1{
-  font-family: "GwmFontSB";
-  font-size: 1.5rem;
-  margin: 10px auto;
-  /* border: 1px solid black; */
+
+div.blog_container article div{
+  display: inline-flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  /* border: 1px solid blue; */
+  width: 100%;
 }
-div.content article > div p{
-  font-family: "GwmFontR";
-  font-size: 1rem;
-  /* border: 1px solid black; */
-  margin: 0 60px;
+
+div.blog_container  article h1{
+  padding-left: 20px;
+  letter-spacing: 1.5px;
+  color: rgb(41, 43, 44);
+  background-color:white;
+  display: block;
+  font-family: "serif.black";
+  font-size: 2rem;
+  margin: 20px 0;
+  border-left: 4px solid rgba(34, 50, 110, 1); 
+
+}
+
+@media (max-width:767px) {
+  div.blog_container  article h1{
+    font-size: 1.5rem;
+
+  }
+}
+
+
+div.blog_container  article  div p:first-child{
+  background-color: rgba(171, 140, 117,0.8);
+  ;
+  padding: 10px;
+  border-left: 4px solid rgba(34, 50, 110, 1); ;
+  margin: 30px 0 20px 0;
+}
+div.blog_container  article  div p{
+  
+  font-family: "serif.light";
+  font-weight: bold;
+  font-size: 1.3rem;
+  /* border: 1px solid rgb(73, 71, 71); */
   text-indent:2rem;
   letter-spacing: 0.3px;
   line-height: 1.5;
-  text-align: left;
-  white-space: pre-wrap;
-  width: 480px;
+  justify-content: flex-start;
+  white-space: wrap;
+  overflow: hidden;
+  
+}
 
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 6;
+div.blog_container  article  div span{
+  align-self: end;
+  margin-top: 20px;
+}
+
+article a{
+  width: 70%;
+  justify-content: center;
+  border: 1px solid rgb(231, 234, 240);
   overflow: hidden;
 }
 
-div.content article > div p2{
-  margin: 10px 10px;
-  text-align: right;
-  /* border: 1px solid black; */
-  font-family: "GwmFontR";
-  font-size: 0.5rem;
+@media(max-width:767px){
+  article a{
+    width: 100%;
+  }
 }
-
 article a img{
   vertical-align: bottom;
-  /* border: 1px solid red; */
-  height: 280px;
+  border: 1px solid rgb(250, 189, 189);
+  width: 100%;
   font-size: 0;
 }
 div.content article:nth-child(2){

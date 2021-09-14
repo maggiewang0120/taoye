@@ -8,7 +8,10 @@
     <meta name="keywords" content="選物">
     <meta name="viewport" content="width=device-width", initial-scale="1", user-scalable="yes">
     <title>陶冶選物|Online-shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/onlineshop.css">
+    <link rel="stylesheet" href="../css/common/header.css">
+
   </head>
   <body>
     
@@ -143,10 +146,10 @@
         <span class="-hr -bottom"></span>
       </button>
 
-        <button type="button" href="#" class="button">
-          居家生活
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+        居家生活
         </button>
-        <div class="option">
+        <div class="option collapse" id="collapseExample1">
           <a href="#" class="option">收納儲物</a><br>
           <a href="#" class="option">護理清潔</a><br>
           <a href="#" class="option">盥洗用品</a><br>
@@ -156,20 +159,20 @@
           <a href="#" class="option">手工具</a><br>
         </div>
   
-        <button type="button" href="#" class="button">
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
           文具書本
         </button>
-        <div class="option">
+        <div class="option collapse" id="collapseExample2">
         <a href="#" class="option">筆記本/紙張</a><br>
         <a href="#" class="option">鉛筆/自動筆/鋼筆</a><br>
         <a href="#" class="option">文件整理</a><br>
         <a href="#" class="option">收納小物</a><br>
         </div>
   
-        <button type="button" href="#" class="button">
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
          餐廚食具
         </button>
-      <div class="option">
+        <div class="option collapse" id="collapseExample3">
         <a href="#" class="option">食器皿</a><br>
         <a href="#" class="option">筷匙</a><br>
         <a href="#" class="option">清潔用品</a><br>
@@ -177,20 +180,20 @@
         <a href="#" class="option">茶器具</a><br>
       </div>
   
-      <button type="button" href="#" class="button">
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">
        飾品
       </button>
-      <div class="option">
+      <div class="option collapse" id="collapseExample4">
         <a href="#" class="option">項鍊</a><br>
         <a href="#" class="option">耳環</a><br>
         <a href="#" class="option">髮飾</a><br>
         <a href="#" class="option">其他</a><br>
       </div>
   
-      <button type="button" href="#" class="button">
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample">
        工藝品牌
       </button>
-      <div class="option">
+      <div class="option collapse" id="collapseExample5">
         <a href="#" class="option">野火製陶</a><br>
         <a href="#" class="option">陶花</a><br>
         <a href="#" class="option">剛剛好</a><br>
@@ -406,6 +409,7 @@
    </footer>
    <p class="tibame">本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，本平台僅供學習、展示之用。參考資源:XXXXXXXXXXXXX。若有侵權疑慮，您可以私訊[TibaMe-前端設計工程師養成班]，後續會由專人協助處理 </p>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
    <script src="../js/dropdownlist.js"></script>
    
    <script>
@@ -416,6 +420,11 @@
       console.log(this);
     });
   });
+
+  var collapseElementList = [].slice.call(document.querySelectorAll('.collapse'))
+  var collapseList = collapseElementList.map(function (collapseEl) {
+    return new bootstrap.Collapse(collapseEl)
+  })
   </script>
 
   </body>
