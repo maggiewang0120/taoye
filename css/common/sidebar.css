@@ -1,7 +1,7 @@
 /* 側邊欄 */
 
   div.parent_container{
-    border: 1px solid greenyellow;
+    /* border: 1px solid greenyellow; */
     display: flex;
     position: relative;
   }
@@ -9,7 +9,7 @@
 
   
   div.parent_container aside.aside div.scroll_area{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 100%;
     overflow-x:scroll ;
   }
@@ -22,7 +22,7 @@
   div.parent_container aside.aside{
     min-width: 100px;
     width: 20%;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     background-color: rgb(217, 217, 214);
     text-align: center;
     display: inline-flex;
@@ -33,7 +33,7 @@
   }
 @media (min-width:768px) {
   .parent_container .aside div.scroll_area .btn_drawer{
-    border: 1px solid tomato;
+    /* border: 1px solid tomato; */
     display: none;
  }
 }
@@ -155,7 +155,7 @@
 
   div.parent_container .container{
     width: 100%;
-    border: 2px solid rgb(255, 136, 0);
+    /* border: 2px solid rgb(255, 136, 0); */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -165,9 +165,10 @@
  
   
   div.parent_container aside.aside button.btn{
+  border: none;
   display: block;
   width: 100%;
-  margin: 0 auto;
+  margin: 10px auto;
   cursor: pointer;
   background: none;
   background-image: url("../../icon/brown_button.png");
@@ -175,7 +176,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   color: white;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   font-family: "serif.black";
   font-size: 1.2rem;
   padding: 5px;

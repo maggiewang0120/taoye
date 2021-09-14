@@ -54,7 +54,7 @@ font-size: 0.5rem;
 div.breadcrumb{
   display: flex;
   margin-top: 20px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 100%;
   padding: 5px 10px;
   border-radius: 5px;
@@ -109,12 +109,12 @@ div.breadcrumb ol.breadcrumb_list > li > a:hover{
   
                                       /* 商品區 */
 div.parent_container main.main{
-  border: 1px solid green;
+  /* border: 1px solid green; */
   
 }
 
   .grid-container {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: grid;
   justify-content: center;
   grid-template-columns: 25% 25% 25% ;
@@ -139,7 +139,7 @@ div.parent_container main.main{
 .grid-item {
   overflow: hidden;
   border-radius: 5px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   box-shadow: 2px 2px 10px grey;
   margin: 0;
   text-align: center;
