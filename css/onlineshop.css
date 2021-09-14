@@ -1,12 +1,9 @@
 @import "./common/all.css";
 @import "./common/footer.css";
-/* @import "./common/header.css"; */
+@import "./common/sidebar.css";
 
 
-/* 
-img{
-  max-width: 100%;
-} */
+
 div.shop_banner_img{
   width: 100%;
   position: relative;
@@ -109,141 +106,7 @@ div.breadcrumb ol.breadcrumb_list > li > a:hover{
 }
 
                               
-  /* 側邊欄 */
-
-  div.parent_container{
-    border: 1px solid greenyellow;
-    display: flex;
-    position: relative;
-  }
   
-   @media (max-width:767px){
-    div.parent_container{
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-  
-  
-  div.parent_container aside.aside{
-    min-width: 100px;
-    width: 20%;
-    border: 1px solid blue;
-    background-color: rgb(217, 217, 214);
-    text-align: center;
-    display: inline-flex;
-    flex-direction: column;
-    vertical-align: top;
-    font-size: 1rem; /* 16px */
-    
-  }
-@media (min-width:768px) {
-  .parent_container .aside .btn_drawer{
-    border: 1px solid tomato;
-    display: none;
- }
-}
-
-@media (max-width:767px) {
-  div.parent_container aside.aside{
-    height: 100vh;
-    position: fixed;
-    width: 30%;
-    top: 44px;
-    z-index: 110;
-    /* overflow-y: scroll; */
-    transform: translateX(-100%);
-    transition: transform ease-in .2s;
-  }
-
-  div.parent_container aside.aside.-on{
-    transform: translateX(0%);
-    
-  }
-  .parent_container .aside .btn_drawer{
-    color: white;
-    width: 40px;
-    background: none;
-    background-color: rgb(217, 217, 214, .1);
-    position: absolute;
-    right: -40px;
-    top:50%;
-    height: 30px;
-    text-align: center;
-    border-radius: 0 5px 5px 0;
-    box-shadow: 5px 0 5px rgba(23, 23, 54, 0.6);
-  }
-  button.btn_drawer span.-hr{
-    height: 2px;
-    width: 50%;
-    background-color: white;
-    display: inline-block;
-    position: absolute;
-    left: 10;
-
-  }
-
-  button.btn_drawer span.-hr.-top{
-    top: 25%;
-  }
-  button.btn_drawer span.-hr.-middle{
-    top: 50%;
-  }
-  button.btn_drawer span.-hr.-bottom{
-    top: 75%;
-  }    
-    
-  
-}
-
-
-
-
-  div.parent_container .container{
-    width: 100%;
-    border: 2px solid rgb(255, 136, 0);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* margin-left: 10%; */
-  }
-  
- 
-  
-  div.parent_container aside.aside button{
-  display: inline-flex;
-  justify-content: center;
-  cursor: pointer;
-  background: none;
-  background-image: url("../icon/brown_button.png");
-  background-position:center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  color: white;
-  border: none;
-  font-family: "serif.black";
-  font-size: 1.2rem;
-  padding: 5px;
-  max-width: 100%;
-  }
-  
-  div.parent_container aside.aside div.option{
-  /* background-image: url(../icon/brown_line.png); */
-  /* border: 1px solid blue; */
-  font-family: "serif.black";
-  line-height: 2;
-  margin: 10px 0;
-  }
-  
-  
-  
-  div.parent_container aside.aside div.option a:hover{
-  transition: all .1s;
-  display: inline-block;
-  width: 100%;
-  background-color: white;
-  font-family: "serif.black";
-  }
-
                                       /* 商品區 */
 div.parent_container main.main{
   border: 1px solid green;
@@ -252,20 +115,22 @@ div.parent_container main.main{
 
   .grid-container {
   border: 1px solid red;
-  margin: 0 20px;
   display: grid;
   justify-content: center;
-  grid-template-columns: 1fr 1fr 1fr ;
-  gap: 50px 50px;
-  
+  grid-template-columns: 25% 25% 25% ;
+  gap: 30px 30px;
+  transition: all 1s;
 }
 
 @media (max-width:767px) {
   .grid-container{
-    grid-template-columns: 1fr 1fr;
-    gap: 10px 10px;
+    grid-template-columns: 40% 40%;
   }
-
+}
+@media (max-width:414px) {
+  .grid-container{
+    grid-template-columns: 80%;
+  }
 
 }
 
@@ -274,17 +139,19 @@ div.parent_container main.main{
 .grid-item {
   overflow: hidden;
   border-radius: 5px;
-  /* border: 1px solid red; */
+  border: 1px solid red;
   box-shadow: 2px 2px 10px grey;
   margin: 0;
-  font-size: 30px;
   text-align: center;
   font-size: 0;
   position: relative;
 }
+
+
 .grid-item img{
   width: 100%;
   height: 100%;
+  
 }
 .grid-item p button{
   font-family: "serif.light";
@@ -298,18 +165,17 @@ div.parent_container main.main{
   border: none;
   }
 a.grid-item p{
- line-height: 1.5;
  font-family: "serif.black";
  font-size: 1rem;
  width: 100%;
- height: 45%;
  display: block;
  /* border: 1px solid red; */
  padding: 10px;
  position: absolute;
  bottom: 0;
+ margin-bottom: 0;
  background-color: rgba(255, 255, 255, 0.8);
- transform: translateY(55%);
+ transform: translateY(70%);
  transition: transform .5s;
 }
   .grid-item:hover p{
@@ -317,20 +183,28 @@ a.grid-item p{
 }
   @media (max-width:767px) {
   a.grid-item{
+    height: 100%;
     display: block;
     overflow:hidden;
     position: static;
+
   }  
+  a.grid-item:last-child{
+    display: none;
+  }
   a.grid-item img{
     
     height: auto;
   }
   a.grid-item p{
+    
+    padding: 0px;
     transform: translateY(0);
     position:relative;
-    height: 50%;
   }
   .grid-item p button{
+
+    display: none;
     padding:5px;
   }
 

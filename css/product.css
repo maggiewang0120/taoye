@@ -1,7 +1,7 @@
 @import "./common/all.css";
 @import "./common/footer.css";
 @import "./common/header.css";
-
+@import "./common/sidebar.css";
 
 
 
@@ -63,140 +63,7 @@ div.breadcrumb{
 
 
 
-  /* 側邊欄 */
-
-  div.parent_container{
-    border: 1px solid greenyellow;
-    display: flex;
-    position: relative;
-  }
   
-   @media (max-width:767px){
-    div.parent_container{
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-  
-  
-  div.parent_container aside.aside{
-    min-width: 100px;
-    width: 20%;
-    border: 1px solid blue;
-    background-color: rgb(217, 217, 214);
-    text-align: center;
-    display: inline-flex;
-    flex-direction: column;
-    vertical-align: top;
-    font-size: 1rem; /* 16px */
-    
-  }
-@media (min-width:768px) {
-  .parent_container .aside .btn_drawer{
-    display: none;
-  }
-}
-@media (max-width:767px) {
-  div.parent_container aside.aside{
-    height: 100vh;
-    position: fixed;
-    width: 30%;
-    top: 44px;
-    z-index: 110;
-    /* overflow-y: scroll; */
-    transform: translateX(-100%);
-    transition: transform ease-in .2s;
-  }
-
-  div.parent_container aside.aside.-on{
-    transform: translateX(0%);
-    
-  }
-  .parent_container .aside .btn_drawer{
-    color: white;
-    width: 40px;
-    background: none;
-    background-color: rgb(217, 217, 214, .1);
-    position: absolute;
-    right: -40px;
-    top:50%;
-    height: 30px;
-    text-align: center;
-    border-radius: 0 5px 5px 0;
-    box-shadow: 5px 0 5px rgba(23, 23, 54, 0.6);
-  }
-  button.btn_drawer span.-hr{
-    height: 2px;
-    width: 50%;
-    background-color: white;
-    display: inline-block;
-    position: absolute;
-    left: 10;
-
-  }
-
-  button.btn_drawer span.-hr.-top{
-    top: 25%;
-  }
-  button.btn_drawer span.-hr.-middle{
-    top: 50%;
-  }
-  button.btn_drawer span.-hr.-bottom{
-    top: 75%;
-  }    
-    
-  
-}
-
-
-
-
-  div.parent_container .container{
-    width: 100%;
-    border: 2px solid rgb(255, 136, 0);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* margin-left: 10%; */
-  }
-  
- 
-  
-  div.parent_container aside.aside button{
-  display: inline-flex;
-  justify-content: center;
-  cursor: pointer;
-  background: none;
-  background-image: url("../icon/brown_button.png");
-  background-position:center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  color: white;
-  border: none;
-  font-family: "serif.black";
-  font-size: 1.2rem;
-  padding: 5px;
-  max-width: 100%;
-  }
-  
-  div.parent_container aside.aside div.option{
-  /* background-image: url(../icon/brown_line.png); */
-  /* border: 1px solid blue; */
-  font-family: "serif.black";
-  line-height: 2;
-  margin: 10px 0;
-  }
-  
-  
-  
-  div.parent_container aside.aside div.option a:hover{
-  transition: all .1s;
-  display: inline-block;
-  width: 100%;
-  background-color: white;
-  font-family: "serif.black";
-  }
-  
-
                                    /* 商品區 */
 
 

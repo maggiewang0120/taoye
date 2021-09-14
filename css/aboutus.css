@@ -37,9 +37,9 @@ section.aboutus{
   section.content .main_content{
     display: block;
     /* margin: 30px 30px; */
-    width: 80%;
+    width: 60%;
     padding: 30px;
-    margin: 10px auto;
+    margin: 5px auto;
     border-radius: 10px;
     background-color: rgb(217, 217, 214, 0.9);
     text-align: center;
@@ -53,7 +53,7 @@ section.aboutus{
     flex-direction: column;
 
     align-items: center;
-    /* border: 1px solid blue; */
+    /* border: 1px solisd blue; */
     text-align: left;
     width: 90%;
   }
@@ -77,7 +77,7 @@ section.aboutus{
   @media screen and (max-width:767px) {
     section.content .main_content{
         padding: 0px;
-        width: 100%;
+        width: 80%;
     }
     .aboutus img{
     
@@ -97,14 +97,19 @@ section.aboutus{
       font-size: 1.8rem;
     }
   }
-  
+  @media screen and (max-width:414px) {
+    section.content .main_content{
+        padding: 0px;
+        width: 100%;
+    }
+  }
   
   /* ======================時間軸========================== */
   
   
   
   .timeline{
-    margin: 100px auto;
+    margin: 50px auto;
     display: flex;
     width: 90%;
     /* border: 2px solid blue;  */
@@ -204,7 +209,8 @@ section.aboutus{
     list-style:inside;
     width: 70%;
     white-space:pre-line;
-    font-family: "serif.black";
+    font-family: serif;
+    font-weight: bold;
     text-align: left;
     padding-left: 0mm;
     letter-spacing: 1.6px;
@@ -218,8 +224,9 @@ section.aboutus{
   .history_maincontent div ul p{
     
     color: black;
-    font-family: "serif.light";
-    font-size: 1.3rem;
+    font-family: serif;
+    font-weight: bold;
+    font-size: 1.2rem;
   }
   
   @media (max-width:767px) {
@@ -231,7 +238,7 @@ section.aboutus{
     color: black;
     font-family: "serif.light";
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
    }
   }
   
@@ -242,7 +249,7 @@ section.aboutus{
   
   .history_maincontent  .history_icon{
     display: inline-flex;
-    width: 20%;
+    width: 25%;
     align-self: center;
     /* border: 2px solid blue; */
     
@@ -281,4 +288,11 @@ section.aboutus{
         font-size: 1.3rem;
       }
       
+      .history_maincontent  .history_icon{
+        display: inline-flex;
+        width: 20%;
+        align-self: center;
+        /* border: 2px solid blue; */
+        
+      }
   }

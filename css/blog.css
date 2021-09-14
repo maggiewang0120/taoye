@@ -79,12 +79,12 @@ div.blog_container  article h1{
 
 
 div.blog_container  article  div p:first-child{
-  background-color: rgba(171, 140, 117,0.8);
-  ;
+  background-color:rgb(255, 255, 255);
   padding: 10px;
   border-left: 4px solid rgba(34, 50, 110, 1); ;
   margin: 30px 0 20px 0;
 }
+
 div.blog_container  article  div p{
   
   font-family: "serif.light";

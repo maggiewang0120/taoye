@@ -1,0 +1,194 @@
+div.shoppingcar{
+    display: flex ;
+    transition: all 1s;
+    font-family: serif;
+}
+
+.shoppingcar .checkout_wrapper {
+    order:2;
+    width: 30%;
+    /* border: 1px solid rgb(196, 75, 75); */
+    display: inline-flex;
+    flex-direction: column ;
+    transition: all 1s;
+}
+.shoppingcar .checkout_wrapper form.checkout{
+    background-color: rgb(217, 217, 214);
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    box-shadow: 1px 1px 3px grey;
+}
+
+.shoppingcar form.shoppingcar div.product_wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    height: 100vh;
+    /* border: 1px solid lightskyblue; */
+    order:1;
+    overflow-y: scroll;
+    margin: 5% auto;
+    background-color: whitesmoke;
+    transition: all 1s;
+}
+
+.shoppingcar form.shoppingcar{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    /* border: 2px solid rgb(9, 78, 121); */
+    order:1;
+    overflow-y: scroll;
+}
+.shoppingcar form.shoppingcar div.shopping_list{
+    
+    font-size: 1.3rem;
+    font-family: serif;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    color:white;
+    align-items: center;
+    
+    justify-content: space-between;
+    padding: 0 5%;
+    background-color: rgb(171, 140, 117);
+}
+.shopping_list div{
+    display: flex;
+    /* border: 1px solid blue; */
+    
+}
+
+
+.shoppingcar form.shoppingcar div.productlist{
+    display:flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 10px;
+    width: 90%;
+    /* border: 1px solid black; */
+    transition: all 1s;
+}
+
+
+
+
+
+.shoppingcar form.shoppingcar div.productlist div.item_check{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.productlist div.item_check div.checkbox input{
+    
+    display: flex;
+    /* border:1px solid blue; */
+    
+}
+.shoppingcar form.shoppingcar div.productlist .item_main_wrapper{
+   /* border: 1px solid black; */
+   display: flex;
+   flex-direction: row;
+
+}
+
+@media (max-width:767px) {
+    .shoppingcar form.shoppingcar div.productlist .item_main_wrapper{
+        flex-direction: column;   
+    }
+    .shoppingcar form.shoppingcar div.product_wrapper{
+        width: 100%;
+        margin:0%;
+    }
+    .shoppingcar form.shoppingcar div.productlist{
+        width: 95%;
+    }
+
+
+}
+
+.shoppingcar form.shoppingcar div.productlist .item_main_wrapper .item_photo{
+   /* border: 1px solid blue; */
+   width: 40%; 
+}
+.item_main_wrapper .item_detail{
+   display: inline-flex;
+   align-items: center;
+   /* border: 1px solid red; */
+   width: 40%;
+}
+.item_main_wrapper .item_extra_wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 40% ;
+    /* border: 1px solid green; */
+    display: inline-flex;
+    align-items: center;
+    gap:10%;
+}
+.item_main_wrapper .delete{
+    display: flex;
+    align-content: middle;
+    width: 10%;
+}
+.item_main_wrapper .item_extra_wrapper div select{
+    width: 100%;
+}
+.item_main_wrapper .item_extra_wrapper div{
+    width: 50%;
+}
+
+
+.shoppingcar form.shoppingcar div.productlist .item_main_wrapper .item_photo img{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+@media (max-width:767px) {
+    div.checkout_wrapper{
+        width: 100%;
+    }
+    
+    div.shoppingcar{
+        flex-direction: column ;
+        width: 100%;
+        
+    }
+    div.shoppingcar form.shoppingcar{
+        margin: 10px auto;
+        width: 90%;
+    }
+    
+    .shoppingcar form.shoppingcar div.productlist .item_main_wrapper{
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        
+    }
+
+    .shoppingcar form.shoppingcar div.productlist .item_main_wrapper .item_photo{
+        /* border: 1px solid blue; */
+        width: 50%; 
+     }
+
+    .item_main_wrapper .item_detail{
+        width: 40%; 
+        justify-content: center;
+    }
+    .item_main_wrapper .item_extra_wrapper{
+        width: 50%; 
+        flex-direction: row;
+        
+    }
+    .item_main_wrapper .item_extra_wrapper .item_quiantity select{
+        width: 50%;
+    }
+    .shoppingcar .checkout_wrapper {
+       width: 100%;
+    }
+}
+

@@ -1,18 +1,20 @@
 @import "./common/footer.css";
 @import "./common/all.css";
 @import "./common/header.css";
+
+/* ======================關於我們========================== */
 @import "./aboutus.css";
 
 
 div.autoplay{
-  border: 1px solid #28FF28;
+  /* border: 1px solid #28FF28; */
   width: 100%;
   margin: auto;
 }
 
 @media (max-width:767px) {
   div.autoplay{
-    border: 1px solid #c228ff;
+    /* border: 1px solid #c228ff; */
     width: 100%;
     margin: auto;
     max-height:500px ;
@@ -21,7 +23,7 @@ div.autoplay{
   div.slide{
     overflow: hidden;
     display: inline-block;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 300px;
     position: relative;
   
@@ -32,7 +34,7 @@ div.autoplay{
   div.slide{
     overflow: hidden;
     display: inline-block;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 600px;
     position: relative;
   }
@@ -113,7 +115,7 @@ button.slick-next{
 }
 
 
-                                              /* ====================活動==================== */
+ /* ====================活動==================== */
 
 div.event{
   display: flex;
@@ -157,7 +159,7 @@ div.main_content{
   position: absolute;
   left: -10px;
   top: -10px;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   transform-origin: center;
   text-align: center;
   padding-top: 20px;
@@ -216,8 +218,7 @@ div.eve{
   text-align: left;
   padding: 10px;
   display: block;
-  /* border:1px solid brown; */
-  font-size: 1rem;
+  font-size: 1.2rem;
   width: 100%;
   white-space: pre-line;
   position: absolute;
@@ -267,6 +268,11 @@ display: inline-flex;
  border-radius: 10px;
  padding: 10px;
  box-shadow: 1px 1px 2px 1px white inset, 1px 1px 2px grey ;
+}
+
+.eve .eve_sign_up.-on{
+  box-shadow: 1px 1px 2px 1px gray inset, 1px 1px 2px white ;
+ 
 }
 
 
@@ -320,26 +326,18 @@ section.content{
 }
 
 .hgtitle p{
-   font-size: 1rem;
+   font-size: 1.2rem;
    font-family: "serif.light";
    display: flex;
    align-self: center;
 }
 
-.content article a{
-  border:1px solid green;
+.content article a.pic{
+  /* border:1px solid green; */
   position: relative;
-  height: 100%;
+  height: 350px;
   width: 50%;
   overflow:hidden;
-}
-@media screen and (max-width:767px) {
-  .content article a{
-    display: flex;
-    min-width: 100%;
-    height: 100%;
-    margin: 0 auto;
-  }
 }
 
 
@@ -350,11 +348,33 @@ section.content{
   margin: 0 auto;
 }
 
+@media screen and (max-width:767px) {
+  .content article a{
+    position: static;
+    display: flex;
+    min-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .content article a.pic{
+   
+    height: auto;
+   
+  }
+
+  .content article a img{
+    position: static;
+    min-height: 100%;
+    min-width: 100%;
+    margin: 0 auto;
+  }
+}
 section.content article {
    display: inline-flex;
-   height: 300px;
+   width: 70%;
    color: white;
-   border: 1px solid orange;
+   /* border: 1px solid orange; */
    align-items: center;
    margin: 10px 40px;
    background-color: rgba(171, 140, 117,0.8);
@@ -387,26 +407,26 @@ section.content article div{
 }
 
 section.content > article > div h1{
-
+ width: 90%;
  text-align: center;
  border-top:1px solid white;
  border-bottom: 1px solid white;
  font-family: "serif.black";
- font-size: 1.2rem;
- margin: 15px auto;
+ font-size: 1.5rem;
+ margin: 20px auto;
  /* border: 1px solid black; */
 }
 
 section.content article > div p{
 
  font-family: "serif.light";
- font-size: 1rem;
+ font-size: 1.2rem;
  /* border: 1px solid black; */
  display: -webkit-box;
  -webkit-box-orient: vertical;
  -webkit-line-clamp: 6;
  overflow: hidden;
- margin: 10px 10px;
+ margin: 5px 20px;
  letter-spacing: 0.5px;
  text-indent:2rem;
  line-height: 1.5;
@@ -414,7 +434,7 @@ section.content article > div p{
 }
 
 /* ====================seemore================ */
- button.seemore{
+ a.seemore{
   color: aliceblue;
   cursor: pointer;
   display: flex;
@@ -425,8 +445,13 @@ section.content article > div p{
   text-align: right;
   border-radius: 10px;
   padding: 10px;
-}
+  transition: font-size .8s;
 
+}
+a.seemore:hover{
+  color: rgb(198, 53, 39);
+  font-size: 1.2rem;
+}
 
 @media screen and (max-width:767px){
   section.content article > div p{
@@ -453,5 +478,4 @@ section.content article > div p{
 
 
 
-/* ======================關於我們========================== */
 

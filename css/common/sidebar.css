@@ -1,0 +1,210 @@
+/* 側邊欄 */
+
+  div.parent_container{
+    border: 1px solid greenyellow;
+    display: flex;
+    position: relative;
+  }
+  
+
+  
+  div.parent_container aside.aside div.scroll_area{
+    border: 1px solid red;
+    width: 100%;
+    overflow-x:scroll ;
+  }
+  @media (max-width:767px) {
+    div.parent_container aside.aside div.scroll_area{
+      width: 80%;
+    }
+  }
+
+  div.parent_container aside.aside{
+    min-width: 100px;
+    width: 20%;
+    border: 1px solid blue;
+    background-color: rgb(217, 217, 214);
+    text-align: center;
+    display: inline-flex;
+    flex-direction: column;
+    vertical-align: top;
+    font-size: 1rem; /* 16px */
+    
+  }
+@media (min-width:768px) {
+  .parent_container .aside div.scroll_area .btn_drawer{
+    border: 1px solid tomato;
+    display: none;
+ }
+}
+
+@media (max-width:767px) {
+  div.parent_container aside.aside{
+    height: 100vh;
+    position: fixed;
+    left:0;
+    width: 50%;
+    top: 44px;
+    z-index: 110;
+    /* overflow-y: scroll; */
+    transform: translateX(-100%);
+    transition: transform ease-in .5s;
+  }
+}
+@media (max-width:414px){
+  div.parent_container aside.aside{
+    height: 100vh;
+    position: fixed;
+    left:0;
+    width: 50%;
+    top: 0px;
+    z-index: 110;
+    /* overflow-y: scroll; */
+    transform: translateX(-100%);
+    transition: transform ease-in .5s;
+  }
+}
+
+
+  div.parent_container aside.aside.-on{
+    transform: translateX(0%);
+    
+  }
+  .parent_container .aside .btn_drawer{
+
+    color: white;
+    width: 40px;
+    background: none;
+    background-color: rgb(217, 217, 214, .1);
+    position: absolute;
+    right: -40px;
+    top:50%;
+    height: 30px;
+    text-align: center;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 5px 0 5px rgba(23, 23, 54, 0.6);
+    transition: all .5s;
+    
+  }
+  button.btn_drawer span.-hr{
+    
+    height: 2px;
+    width: 50%;
+    background-color: white;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+
+  }
+
+  button.btn_drawer span.-hr.-top{
+    top: 25%;
+  }
+  button.btn_drawer span.-hr.-middle{
+    top: 50%;
+  }
+  button.btn_drawer span.-hr.-bottom{
+    top: 75%;
+  }    
+  
+
+  @media (max-width:767px) {
+    button.btn_drawer span.-hr.-top.-close{
+      transform-origin: 0% 50%;
+      top: 4px;
+      left: 5px;
+      width: 85%;
+      transform: rotate(45deg);
+      transition: transform .5s;
+    }
+    button.btn_drawer span.-hr.-middle.-close{
+      opacity: 0;
+      
+    }
+    button.btn_drawer span.-hr.-bottom.-close{
+      transform-origin: 0% 50%;
+      bottom: 0px;
+      left: 5px;
+      width: 80%;
+      transform: rotate(-45deg);
+      transition: transform .5s;
+      top: auto;
+    }
+    .parent_container .aside .btn_drawer.-close{
+      border-radius: 0 ;
+      right: 0px;
+      box-shadow:none;
+      top:0%;
+    }
+  }
+
+  
+  
+  @media (max-width:414px) {
+    div.parent_container aside.aside{
+     width: 100%;
+    }
+  }
+
+  
+
+
+
+
+
+  div.parent_container .container{
+    width: 100%;
+    border: 2px solid rgb(255, 136, 0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* margin-left: 10%; */
+  }
+  
+ 
+  
+  div.parent_container aside.aside button.btn{
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  cursor: pointer;
+  background: none;
+  background-image: url("../../icon/brown_button.png");
+  background-position:center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: white;
+  border: 1px solid red;
+  font-family: "serif.black";
+  font-size: 1.2rem;
+  padding: 5px;
+  max-width: 100%;
+  }
+  
+  @media (max-width:767px) {
+    div.parent_container aside.aside button.btn{
+      display: block;
+    width: 70%;
+    }
+   }
+
+
+
+  div.parent_container aside.aside div.option{
+  /* background-image: url(../icon/brown_line.png); */
+  /* border: 1px solid blue; */
+  font-family: "serif.black";
+  line-height: 2;
+  margin: 10px 0;
+  }
+  
+  
+  
+  div.parent_container aside.aside div.option a:hover{
+  transition: all .1s;
+  display: inline-block;
+  width: 100%;
+  background-color: white;
+  font-family: "serif.black";
+  }

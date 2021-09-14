@@ -9,9 +9,10 @@
     <title>陶冶選物|Taoye select</title>
     <link rel="stylesheet" href="../css/common/header.css">
     <link rel="stylesheet" href="../css/common/footer.css">
+    
     <link rel="stylesheet" href="../css/common/all.css">
   </head>
-
+ <link rel="stylesheet" href="../css/shoppingcar.css">
   <body>
 <!-- =====選單===== -->  
     <div class="header">
@@ -33,10 +34,9 @@
 
 
           <div class="search_scrolldown">
-            <img  class="input_search" src="../icon/magnifying-glass.svg" >
             <input  type="search" placeholder="搜尋" >
-
-            <a class="shoppingcar" href="./shoppingcar.html"><img src="../icon/shopping-cart.svg"></a>
+            <a href=""><i class="fas fa-search fa-2x"></i></a>             
+            <a href="./shoppingcar.html"><i class="fas fa-shopping-cart fa-2x"></i></a>
           </div>           
       </div>
       <div class="global_nav">
@@ -77,18 +77,16 @@
         
 
         <div class="search">
-          <img  class="input_search" src="../icon/magnifying-glass.svg" >
           <input  type="search" placeholder="搜尋" >
-
-          <a class="shoppingcar" href="./shoppingcar.html"><img src="../icon/shopping-cart.svg"></a>
-
-        </div>
+          <a href=""><i class="fas fa-search fa-2x"></i></a>             
+          <a href="./shoppingcar.html"><i class="fas fa-shopping-cart fa-2x"></i></a>
+         </div>
 
       </div>
    </div>
 
 <!-- =====登入===== -->
-    <div class="sign_up">
+    <div  class="sign_up">
             
       <article class = "sign_up_content">
         <button class="close" type="button">
@@ -122,110 +120,349 @@
     </div>
 
 <!-- =====購物車內容===== -->
-    <main class="shoppingcar">
+    
+    <div class="shoppingcar">
 
-      <div>
-        <ul class="title">
-          <li>商品</li>
-          <li>尺寸/顏色</li>
-          <li>數量</li>
-          <li>價格</li>
-        </ul>
+      <div class="checkout_wrapper">
+        <form class="checkout" enctype="multipart/form-data">
+          
+            
+            <h3>購物車總計</h3>
 
-        <div class="prouctlist">
-          <p>下次再買</p>
+            <div class="checklist">
+              <label for="total">小計</label>
+              <p>$NT0</p>
+              <tr>
 
-          <img src="" alt="">
-          <a href="#"> 永島敦義鋁橢圓皿</a>
-          <p>尺寸：中</p>
-          <p>數量：1</p>
-          <p>NT$1350</p>
-        </div>
+              <div>
+                <h3>運送方式</h3>
+                <label for="freight">7-11取貨運費$65</label><input type="radio" id="freight">
+                <button type="button">選取門市</button>
+                <label for="freight">郵局寄送</label><input type="radio" id="freight">
+              </div>  
 
-        <div class="prouctlist">
-          <p>下次再買</p>
+              <div>
+                <h3>付款方式</h3>
+                <label for="pay">貨到付款</label><input type="radio" id="pay">
+                <label for="pay">信用卡付款</label><input type="radio" id="pay">
+                <label for="pay">轉帳</label><input type="radio" id="pay">
+              </div>
 
-          <img src="" alt="">
-          <a href="#"> 永島敦義鋁橢圓皿</a>
-          <p>尺寸：中</p>
-          <p>數量：1</p>
-          <p>NT$1350</p>
-        </div>
+              <div>
+                <span>滿1500免運</span> 
+                <label for="freight">計算運費</label>
+                <p>$NT0</p>
+              </div>
 
-        <div class="prouctlist">
-          <p>下次再買</p>
+              
+                
+              <div>
+                <label for="freight">運費折抵</label>
+                <p>$NT0</p>
 
-          <img src="" alt="">
-          <a href="#"> 永島敦義鋁橢圓皿</a>
-          <p>尺寸：中</p>
-          <p>數量：1</p>
-          <p>NT$1350</p>
-        </div>
+                <h3>總計</h3> <label for="subtotal"><p>NT$0</p></label>
 
-        <div class="prouctlist">
-          <p>下次再買</p>
+                <span>會員點數滿1000元加一點</span>
+                <button type="submit" >結帳</button>
+              </div>
 
-          <img src="" alt="">
-          <a href="#"> 永島敦義鋁橢圓皿</a>
-          <p>尺寸：中</p>
-          <p>數量：1</p>
-          <p>NT$1350</p>
-        </div>
+              <span class="hint">
+                現貨24hr出貨，例假日順延。到貨時間約2~3日。詳情請看購物說明。
 
-        <div class="prouctlist">
-          <p>下次再買</p>
+                每一訂單商品合計1,500新台幣以上時，可享免運費(部分特殊商品除外)
 
-          <img src="" alt="">
-          <a href="#"> 永島敦義鋁橢圓皿</a>
-          <p>尺寸：中</p>
-          <p>數量：1</p>
-          <p>NT$1350</p>
-        </div>
+                若僅先將商品點選「放入購物車」時，不算完成該商品的訂購，系統亦不會保留庫存量。故若未完成結帳流程，且此商品已售完的狀況下，將無法繼續進行結帳。
+              </span>
+            </div>
 
-        <div class="prouctlist">
-          <p>下次再買</p>
-
-          <img src="" alt="">
-          <a href="#"> 永島敦義鋁橢圓皿</a>
-          <p>尺寸：中</p>
-          <p>數量：1</p>
-          <p>NT$1350</p>
-        </div>
-
-        <div class="prouctlist">
-          <p>下次再買</p>
-          <img src="" alt="">
-          <a href="#"> 永島敦義鋁橢圓皿</a>
-          <p>尺寸：中</p>
-          <p>數量：1</p>
-          <p>NT$1350</p>
-        </div>
-
-        <div class="prouctlist">
-          <p>下次再買</p>
-          <img src="" alt="">
-          <a href="#"> 永島敦義鋁橢圓皿</a>
-          <p>尺寸：中</p>
-          <p>數量：1</p>
-          <p>NT$1350</p>
-        </div>
-
-        <div class="prouctlist">
-          <p>下次再買</p>
-          <img src="" alt="">
-          <a href="#"> 永島敦義鋁橢圓皿</a>
-          <p>尺寸：中</p>
-          <p>數量：1</p>
-          <p>NT$1350</p>
-        </div>
+          
+        </form>
       </div>
 
-      <div class="pay">
-        <h1>購物車總計</h1>
-        <p>小計</p>
-      </div>
+      <form class="shoppingcar">
+        
+       
+          <div class="product_wrapper">
+              
+             <div class="shopping_list">
+                <div class="checkbox">
+                  <input type="checkbox">
+                </div>
+                
+                  <p>購物車總計</p>
+                 
+             </div>
 
-    </main>
+              <div class="productlist">
+                  <div class="item_check">
+                    <input type="checkbox">
+                    <div>
+                    <span>下次再買</span>
+                      <span style="font-size: 1em; color: red;">
+                        <i class="far fa-heart"></i>
+                      <span>
+                    </div>
+                  </div>
+
+                  <div class="item_main_wrapper">
+                    
+
+                    <div class="item_photo">
+                      <a href="">
+                        <img src="../images/retro-clock.jpg" alt="">
+                      </a>
+                    </div>
+
+                    <div class="item_detail">
+                      <a href="#"> 永島敦義鋁橢圓皿</a>
+                    </div>
+
+                    <div class="item_extra_wrapper">
+
+                      <div class="item_quiantity">
+                        <select>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                        </select>
+                      </div>           
+                      <div class="item_subtotal">
+                        NT$1350
+                      </div>
+
+                    </div>
+
+                    <div  class="delete">
+                      <a href="">刪除</a>
+                      <i class="fa-solid fa-cart-shopping"></i>                   
+                    </div>
+                  </div>
+              </div>
+              <div class="productlist">
+                <div class="item_check">
+                  <input type="checkbox">
+                  <div>
+                  <span>下次再買</span>
+                    <span style="font-size: 1em; color: red;">
+                      <i class="far fa-heart"></i>
+                    <span>
+                  </div>
+                </div>
+
+                <div class="item_main_wrapper">
+                  
+
+                  <div class="item_photo">
+                    <a href="">
+                      <img src="../images/retro-clock.jpg" alt="">
+                    </a>
+                  </div>
+
+                  <div class="item_detail">
+                    <a href="#"> 永島敦義鋁橢圓皿</a>
+                  </div>
+
+                  <div class="item_extra_wrapper">
+
+                    <div class="item_quiantity">
+                      <select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                    </div>           
+                    <div class="item_subtotal">
+                      NT$1350
+                    </div>
+
+                  </div>
+
+                  <div role="button" class="delete">
+                  </div>
+                </div>
+              </div>
+              <div class="productlist">
+              <div class="item_check">
+                <input type="checkbox">
+                <div>
+                <span>下次再買</span>
+                  <span style="font-size: 1em; color: red;">
+                    <i class="far fa-heart"></i>
+                  <span>
+                </div>
+              </div>
+
+              <div class="item_main_wrapper">
+                
+
+                <div class="item_photo">
+                  <a href="">
+                    <img src="../images/retro-clock.jpg" alt="">
+                  </a>
+                </div>
+
+                <div class="item_detail">
+                  <a href="#"> 永島敦義鋁橢圓皿</a>
+                </div>
+
+                <div class="item_extra_wrapper">
+
+                  <div class="item_quiantity">
+                    <select>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </select>
+                  </div>           
+                  <div class="item_subtotal">
+                    NT$1350
+                  </div>
+
+                </div>
+
+                <div role="button" class="delete">
+                </div>
+              </div>
+              </div>
+              <div class="productlist">
+                <div class="item_check">
+                  <input type="checkbox">
+                  <div>
+                  <span>下次再買</span>
+                    <span style="font-size: 1em; color: red;">
+                      <i class="far fa-heart"></i>
+                    <span>
+                  </div>
+                </div>
+
+                <div class="item_main_wrapper">
+                  
+
+                  <div class="item_photo">
+                    <a href="">
+                      <img src="../images/retro-clock.jpg" alt="">
+                    </a>
+                  </div>
+
+                  <div class="item_detail">
+                    <a href="#"> 永島敦義鋁橢圓皿</a>
+                  </div>
+
+                  <div class="item_extra_wrapper">
+
+                    <div class="item_quiantity">
+                      <select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                    </div>           
+                    <div class="item_subtotal">
+                      NT$1350
+                    </div>
+
+                  </div>
+
+                  <div role="button" class="delete">
+                  </div>
+                </div>
+              </div>
+              <div class="productlist">
+                <div class="item_check">
+                  <input type="checkbox">
+                  <div>
+                  <span>下次再買</span>
+                    <span style="font-size: 1em; color: red;">
+                      <i class="far fa-heart"></i>
+                    <span>
+                  </div>
+                </div>
+
+                <div class="item_main_wrapper">
+                  
+
+                  <div class="item_photo">
+                    <a href="">
+                      <img src="../images/retro-clock.jpg" alt="">
+                    </a>
+                  </div>
+
+                  <div class="item_detail">
+                    <a href="#"> 永島敦義鋁橢圓皿</a>
+                  </div>
+
+                  <div class="item_extra_wrapper">
+
+                    <div class="item_quiantity">
+                      <select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                    </div>           
+                    <div class="item_subtotal">
+                      NT$1350
+                    </div>
+
+                  </div>
+
+                  <div role="button" class="delete">
+                  </div>
+                </div>
+              </div>
+              <div class="productlist">
+            <div class="item_check">
+              <input type="checkbox">
+              <div>
+              <span>下次再買</span>
+                <span style="font-size: 1em; color: red;">
+                  <i class="far fa-heart"></i>
+                <span>
+              </div>
+            </div>
+
+            <div class="item_main_wrapper">
+              
+
+              <div class="item_photo">
+                <a href="">
+                  <img src="../images/retro-clock.jpg" alt="">
+                </a>
+              </div>
+
+              <div class="item_detail">
+                <a href="#"> 永島敦義鋁橢圓皿</a>
+              </div>
+
+              <div class="item_extra_wrapper">
+
+                <div class="item_quiantity">
+                  <select>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                </div>           
+                <div class="item_subtotal">
+                  NT$1350
+                </div>
+
+              </div>
+
+              <div role="button" class="delete">
+              </div>
+            </div>
+            </div>
+
+          </div>
+        
+        
+
+      </form>
+
+    </div>  
+
+    
     
 <!-- =====fooooooter===== -->
     <footer>
@@ -293,7 +530,7 @@
    <p class="tibame">本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，本平台僅供學習、展示之用。參考資源:XXXXXXXXXXXXX。若有侵權疑慮，您可以私訊[TibaMe-前端設計工程師養成班]，後續會由專人協助處理 </p>
 
 
-
+   <script src="https://kit.fontawesome.com/62d00dd306.js" crossorigin="anonymous"></script>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
    <script src="../js/dropdownlist.js"></script>
 

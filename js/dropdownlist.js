@@ -2,12 +2,15 @@
 
 $(function() {
     $(window).scroll(function() {
-      if ($(this).scrollTop() > 20)  {
+      if ($(this).scrollTop() > 0)  {
          $('.header').addClass('-scroll-down')
       } else {
           $('.header').removeClass('-scroll-down');
       }
+      
     });
+
+     
   });
 
   $(function(){
@@ -16,6 +19,7 @@ $(function() {
     $("button.hamburger_icon").on("click", function(){
       $("div.global_nav").slideToggle();
       $(this).toggleClass("-on");
+      
     });
   });
 

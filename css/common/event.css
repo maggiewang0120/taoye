@@ -24,7 +24,7 @@ div.tab_container div.tab_list_block ul.tab_list > li > a{
   font-family: "GwmFontSB";
   text-decoration: none;
   display: inline-block;
-  border: 1px solid rgba(34, 50, 110, 1);
+  /* border: 1px solid rgba(34, 50, 110, 1); */
   padding: 8px 20px;
   background-color: rgba(34, 50, 110, 1);
   border-radius: 5px 5px 0 0;
@@ -95,3 +95,4 @@ div.tab_container div.p div {
 div.tab_container div.p div p,.tab_container div.p div h2{
   padding: 5px;
 }
+
