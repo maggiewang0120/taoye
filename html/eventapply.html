@@ -70,9 +70,9 @@
             <li><a href="#" class="options">聯絡我們</a></li>
           </ul>
         </span>
-        <span class="title"><a href="#">會員<br><span>membership</span> </a></span>
+        <span class="title"><a type = "button" class="btn_member" href="#">會員<br><span>membership</span> </a></span>
 
-
+        
 
         <div class="search">
           <input  type="search" placeholder="搜尋" >
@@ -81,8 +81,41 @@
         </div>
 
       </div>
-  </div>
+    </div>
 
+    <div class="sign_up">
+            
+      <article class = "sign_up_content">
+        <button class="close" type="button">
+            
+            <span class="-hr -top"></span>
+            <span class="-hr -bottom"></span>
+        </button>
+        <div>
+            <div class="logo">
+              <img src="../logog/logo.svg" >
+            </div>
+            <h1>會員登入</h1>
+        </div>
+
+        <form action="">
+            <input type="text" id="" placeholder="電子郵件或手機號碼" value=""></label>
+            <input type="email" placeholder="請輸入密碼"></label>
+            <button type="submit">登入</button>
+ 
+        </form>
+
+        <div>
+          <p id="forgot_password"> 忘記密碼</p>
+          <p>還不是會員嗎？<a href="button">立刻註冊新帳號</a></p>
+          
+        </div>
+        
+      </article>
+
+
+    </div>
+    
     <main class="event_container">
 
       <div class="photo">
@@ -175,9 +208,9 @@
 
         <div class="sitemap">
 
-          <h3><a href="#">online shop</a></h3>
-            <a href="#">居家生活</a>
-            <a href="#">文具書本</a>
+          <h3><a href="./shop_living.html">online shop</a></h3>
+            <a href="./shop_living.html">居家生活</a>
+            <a href="./shop_stationery.html">文具書本</a>
             <a href="#">餐廚食具</a>
             <a href="#">飾品</a>
             <a href="#">藝術家/工藝品牌</a>
@@ -186,7 +219,7 @@
 
         <div class="aboutus">
 
-        <h3><a href="#">about us</a></h3>
+        <h3><a href="./aboutus.html">about us</a></h3>
           <a href="http://yahoo.com" target="_blank">品牌精神</a>
           <a href="http://yahoo.com">合作品牌</a>
           <a href="http://yahoo.com">藝術家/工藝品牌</a>
@@ -204,7 +237,8 @@
    </footer>
    
    <p class="tibame">本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，本平台僅供學習、展示之用。參考資源:XXXXXXXXXXXXX。若有侵權疑慮，您可以私訊[TibaMe-前端設計工程師養成班]，後續會由專人協助處理 </p>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <script src="https://kit.fontawesome.com/62d00dd306.js" crossorigin="anonymous"></script>
-
+   <script src="../js/dropdownlist.js"></script>
   </body>
 </html>
