@@ -37,8 +37,7 @@
 
 
             <div class="search_scrolldown">
-              <input  type="search" placeholder="搜尋" >
-              <a href=""><i class="fas fa-search fa-2x"></i></a>             
+              <a href="" ><i class="fas fa-search fa-2x"></i></a>             
               <a href="./shoppingcar.html"><i class="fas fa-shopping-cart fa-2x"></i></a>
             </div>           
         </div>
@@ -56,10 +55,10 @@
           <span class="title">
           <a href="./event.html">活動<br><span>event&exhibition </span></a>
             <ul>
-              <li><a href="./event.html" class="options">工作坊</a></li>
-              <li><a href="./event.html" class="options">講座</a></li>
-              <li><a href="./event.html" class="options">展覽</a></li>
-              <li><a href="./event.html" class="options">市集活動</a></li>
+              <li><a href="./event.html?id=studio" class="options event.options" >工作坊</a></li>
+              <li><a href="./event.html?id=lecture" class="options event.options">講座</a></li>
+              <li><a href="./event.html?id=exhibition" class="options event.options">展覽</a></li>
+              <li><a href="./event.html?id=bazzar" class="options event.options">市集活動</a></li>
             </ul>
           </span>
           <span class="title"><a href="./blog.html">專欄<br><span>blog</span> </a>
@@ -69,7 +68,7 @@
               <li><a href="./blog.html" class="options">品牌專欄</a></li>
             </ul>
           </span>
-          <span class="title"><a href="./aboutus.html">關於我們<br><span>about us</span> </a>
+          <span class="title"><a class="about_us" href="#about_us">關於我們<br><span>about us</span> </a>
             <ul>
               <li><a href="./aboutus.html" class="options">品牌起源精神</a></li>
               <li><a href="./aboutus.html" class="options">聯絡我們</a></li>
@@ -106,7 +105,7 @@
         </div>
 
         <form action="">
-            <input type="text" id="" placeholder="電子郵件或手機號碼" value=""></label>
+            <input type="password" id="" placeholder="電子郵件或手機號碼" value=""></label>
             <input type="email" placeholder="請輸入密碼"></label>
             <button type="submit">登入</button>
  
@@ -241,7 +240,7 @@
 
 
 
-                                                                   <!-- 文章 -->
+<!-- 文章 -->
 
 
 
@@ -311,7 +310,7 @@
 
 
 
-    <section class="content aboutus">
+    <section class="content aboutus" id="about_us">
         <div class="main_content">
   
   
@@ -595,8 +594,18 @@
         scrollTop: 0
       }, 750);
     });
-    
+
+    $("a.about_us").on("click", function(e){
+      e.preventDefault();
+      $('html, body').animate({
+        scrollTop:$('#about_us').offset().top
+      },400);
+    });
+
   });
+
+
+
   $(function(){
   $("span.eve_sign_up").on("mouseover", function(){
      
@@ -609,6 +618,10 @@
      
    });
   });
+
+
+  // var event_target = document.getElementsByClassName("event.options")
+
   </script>
  </body>
 </html>

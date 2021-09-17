@@ -8,7 +8,7 @@
     <meta name="keywords" content="選物">
     <meta name="viewport" content="width=device-width", initial-scale="1", user-scalable="yes">
     <link rel="stylesheet" href="../css/common/all.css">
-    <link rel="stylesheet" href="../css/common/event.css">
+    <link rel="stylesheet" href="../css/event.css">
     <link rel="stylesheet" href="../css/common/header.css">
     <link rel="stylesheet" href="../css/common/footer.css">
     <title>陶冶選物|Taoye select</title>
@@ -120,17 +120,17 @@
 
     <div class="tab_container">
 
-      <div class="tab_list_block">
+      <div class="tab_list_block"> <!--頁籤-->
         <ul class="tab_list">
-          <li><a href="#" data-target="tab1" class="tab -on">工作坊</a></li>
-          <li><a href="#" data-target="tab2" class="tab">講座</a></li>
-          <li><a href="#" data-target="tab3" class="tab">展覽</a></li>
-          <li><a href="#" data-target="tab4" class="tab">市集活動</a></li>
+          <li><a href="#" data-target="tab1" class="tab -on" id="studio">工作坊</a></li>
+          <li><a href="#" data-target="tab2" class="tab" id="lecture">講座</a></li>
+          <li><a href="#" data-target="tab3" class="tab" id="exhibtion">展覽</a></li>
+          <li><a href="#" data-target="tab4" class="tab" id="bazzar">市集活動</a></li>
 
         </ul>
       </div>
 
-      <div class="tab_contents">
+      <div class="tab_contents"> <!--頁籤內容-->
 
         <div class="tab tab1 -on">
           <div class="p">
@@ -465,6 +465,8 @@
  <script src="https://kit.fontawesome.com/62d00dd306.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script type="text/javascript">
+
+
       $(function(){
       $("a.tab").on("click", function(e){
         e.preventDefault();
@@ -479,8 +481,55 @@
       });
     });
 
+    // var tab_contents = document.getElementsByClassName("tab_contents");
+    // console.log(tab_contents);
+
+   
+    var tab_target = document.querySelectorAll("a.tab");
+    console.log(tab_target);
+
+
+    document.addEventListener("DOMContentLoaded", function(){   
+      let queryString =location.search;  
+      queryString = queryString.replace(/\?id=/,"");
+  
+
+      switch(queryString){
+        case "studio":
+
+          break;
+
+        case "lecture":
+         
+          break;
+          
+        case "exhibition": 
+          alert("exhibition");      
+          break;
+
+        case "bazzar":
+          alert("bazzar");      
+          break;
+          
+      }
+    });
+
+    // if(haha == "studio"){
+      //   // console.log("studio");
+      //   let studio = document.getElementsByClassName("tab")[0];
+      //   // studio.getAttribute("data-target").addClass("-on");
+      //   // console.log(studio);
+
+      // }else if(haha == "lecture"){
+      //   // console.log("lecture");
+      // }else if(haha == "exhibition"){
+      //   // console.log("exhibition");
+      // }else if(haha = "bazzar"){
+      //   // console.log("bazzar");
+      // }
 
     $(function() {
+      
       $(window).scroll(function() {
         if ($(this).scrollTop() > 0)  {
            $('.header').addClass('-scroll-down')
