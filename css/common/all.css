@@ -10,7 +10,7 @@ body{
 }
 
 @font-face{
-font-family: serif;
+font-family: "serif";
 src: url("../../fonts/NotoSerifTC-Black.otf");
 font-display: block;
 }

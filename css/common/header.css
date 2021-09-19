@@ -122,7 +122,7 @@ a.logo img{
 span.title{
   letter-spacing: 1.5px;
   font-size: 1rem;
-  font-family: serif;
+  font-family: "serif";
   font-weight: bold ;
   text-align: center;
   justify-content: center;
@@ -272,7 +272,7 @@ span.title > ul {
 
 
   span.title ul li a{
-    font-family: serif;
+    font-family: "serif";
     font-size: 1rem;
   }
 
@@ -351,7 +351,7 @@ span.title > ul {
       align-items: center;
       width: 100%;
       /* border: 1px solid plum; */
-      font-family: serif;
+      font-family: "serif";
       margin: 10px 0;
       display: none;
     }
@@ -364,7 +364,7 @@ span.title > ul {
       align-items: center;
       width: 100%;
       /* border: 1px solid rgb(138, 7, 138); */
-      font-family: serif;
+      font-family: "serif";
       margin: 10px 0;
       display: none;
     }
@@ -423,7 +423,7 @@ span.title > ul {
   }
 
   .sign_up article form label{
-    font-family: serif;
+    font-family: "serif";
     font-size: 1rem;
     display: flex;
     
@@ -434,7 +434,7 @@ span.title > ul {
     justify-content: center;
   }
   .sign_up article form input{
-    font-family: serif;
+    font-family: "serif";
     margin: 10px 0;
     width: 70%;
     height: 40px;
@@ -444,7 +444,7 @@ span.title > ul {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    font-family: serif;
+    font-family: "serif";
     font-size: 1rem;
     padding: 20px;
     width: 70%;
@@ -458,7 +458,7 @@ span.title > ul {
   span.title ul li a.options:hover{
   text-decoration: underline;
   color: rgb(198 53 39);
-  font-family: serif;
+  font-family: "serif";
   }
 
   span.title ul li{
@@ -489,7 +489,7 @@ span.title > ul {
     align-items:center;
   }
   .search input{
-    font-family: serif;
+    font-family: "serif";
     width: 80%;
     margin-right: 10px;
   }
@@ -519,7 +519,7 @@ span.title > ul {
   }
 
   .search_scrolldown input{
-    font-family: serif;
+    font-family: "serif";
     width: 60%;
     height: 90%;
   }
@@ -543,4 +543,9 @@ span.title > ul {
   /* border: 1px solid white; */
   width: 15%;
  }
+
+ div.search{
+  display: none;
+}
+
 }
