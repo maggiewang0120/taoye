@@ -51,7 +51,6 @@ a.logo{
 @media screen and (max-width:767px){
   div.top{
     width: 20%;
-    /* height: 20%; */
     /* border: 1px solid green; */
     padding: 0;
   }
