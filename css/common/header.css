@@ -1,9 +1,6 @@
 @import "./all.css";
 
 
-body{
-  /* border: 2px solid red; */
-}
 
 
 div.header{
@@ -183,7 +180,7 @@ span.title{
 
     button.hamburger_icon.-on span.-hr.-top{
       transform-origin: 0% 50%;
-      top: 4px;
+      top: 5px;
       left:6px;
       width: 85%;
       transform: rotate(45deg);
@@ -198,8 +195,8 @@ span.title{
 
 
       transform-origin: 0% 50%;
-      bottom: 6px;
-      left: 5px;
+      bottom: 5px;
+      left: 6px;
       width: 85%;
       transform: rotate(-45deg);
       transition: transform .5s;

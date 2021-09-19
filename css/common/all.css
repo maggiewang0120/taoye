@@ -12,12 +12,12 @@ body{
 @font-face{
 font-family: "serif";
 src: url("../../fonts/NotoSerifTC-Black.otf");
-font-display: block;
+font-display: swap;
 }
 @font-face {
 font-family: "serif.light";
 src: url("../../fonts/NotoSerifTC-Light.otf");
-font-display: block;
+font-display: swap;
 }
 
 a{

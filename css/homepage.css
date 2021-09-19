@@ -43,6 +43,7 @@ div.autoplay{
   }
 
 .slide h1{
+  font-family: "serif";
   font-size: 2rem;
   padding: 10px;
   background: rgba(217, 217, 214, 0.8);
