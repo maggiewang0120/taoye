@@ -97,26 +97,63 @@
             <span class="-hr -top"></span>
             <span class="-hr -bottom"></span>
         </button>
-        <div>
-            <div class="logo">
-              <img src="../logog/logo.svg" >
-            </div>
-            <h1>會員登入</h1>
-        </div>
 
-        <form action="">
-            <input type="password" id="" placeholder="電子郵件或手機號碼" value=""></label>
-            <input type="email" placeholder="請輸入密碼"></label>
-            <button type="submit">登入</button>
- 
-        </form>
+        <div class="login_content">
+          <div>
+              <div class="logo">
+                <img src="../logog/logo.svg" >
+              </div>
+              <h1>會員登入</h1>
+          </div>
 
-        <div>
-          <p id="forgot_password"> 忘記密碼</p>
-          <p>還不是會員嗎？<a href="button">立刻註冊新帳號</a></p>
-          
+          <form action="">
+              <input type="password" id="" placeholder="電子郵件或手機號碼" value=""></label>
+              <input type="email" placeholder="請輸入密碼"></label>
+              <button type="submit">登入</button>
+  
+          </form>
+
+          <div class="hint">
+            <p id="forgot_password"> 忘記密碼</p>
+            <p>還不是會員嗎？<a href="button">立刻註冊新帳號</a></p>
+            
+          </div>
         </div>
-        
+      </article>
+
+      <article class="forgot_password_content">
+        <button class="close" type="button">
+            
+          <span class="-hr -top"></span>
+          <span class="-hr -bottom"></span>
+        </button>
+        <div class="forgot_password">
+            <div>
+              <div class="logo">
+                <img src="../logog/logo.svg">
+              </div>
+
+              <h1>重新設定密碼</h1>
+              <div class="reset_hint">
+                <p>請輸入你註冊時的 Email，我們會發送一封信件，點擊信件中的連結以重設密碼。
+                找不到認證信時，請到「垃圾信件」分類查找，或在信箱搜尋「陶冶」。</p>
+             </div>
+          </div>
+
+          <form action="">
+              <input type="text" id="" placeholder="電子郵件" value=""></label>
+              
+              <button type="submit">發送認證信</button>
+
+          </form>
+
+          <div class="hint">
+            
+            <p id="return">返回上一頁</p>
+            <p>還不是會員嗎？<a href="button">立刻註冊新帳號</a></p>     
+          </div>
+       </div>
+
       </article>
 
 
@@ -154,10 +191,8 @@
 
 
   <button type="button" id="go_top">↑</button>
-<!-- 活動 -->
 
-
-
+  <!-- 活動 -->
   <div class="event">
 
     <div class="hgtitle">
@@ -241,10 +276,6 @@
 
 
 <!-- 文章 -->
-
-
-
-
 <div class="container">
 
       <div class="hgtitle">
@@ -268,7 +299,8 @@
         <article>
           <a class="pic" href="./blog.html" target="_blank"><img src="../images/hp_art_yuandau.jpeg"></a> <!--561*300-->
           <div>
-            <h1>永島義敦—手工鍛造的溫度讓金屬充滿溫暖</h1>
+            <h1>永島義敦
+              手工鍛造的溫度讓金屬充滿溫暖</h1>
             <p> 永島義教是以「鍛造」的工法從事金屬工藝創作，「鍛造」是指將金屬材料，加熱到極高溫度，然後以鐵製鎚具加以搥打，冷卻，加熱，搥打，一直重複直到成形。
               除了形狀的打造之外，透過鍛造，也將金屬材料打造得更加堅韌，表面更加有溫度感。材料除了不銹鋼之外，鋁，黃銅（真諭），鐵等也是使用的材料，個展時才會有的非餐具類的創作，也十分受到藏家的喜愛。 </p>
               <a href="./blog.html" class="seemore">see more</a>
@@ -281,7 +313,8 @@
         <article>
           <a class="pic" href="./blog.html" target="_blank"><img src="../images/hp_art_guadau01.jpeg"></a> <!--561*300-->
           <div>
-            <h1>認識切子酒器 精緻又美麗的日本傳統工藝</h1>
+            <h1>認識切子酒器 
+              精緻又美麗的日本傳統工藝</h1>
             <p>在日本，你可能會看到不少美麗的玻璃製品，那精緻的手工實在讓人忍不住去讚嘆一番。但你知道那些美麗的玻璃圖案是甚麼嗎？這些使人神迷的藝術作品被稱為「切子」(Kiriko)。現在就來了解這種日本傳統玻璃藝術吧！江戶切子源自江戶，江戶即是東京的前稱。江戶切子由加賀屋久兵衛所創，他在1834年於江戶的大傳馬町(大伝馬町)開設玻璃工房。當時大阪是創新玻璃工藝集中地的城市，加賀屋久兵衛於大阪學成工藝後，他便</p>
             <a href="./blog.html" class="seemore">see more</a>
           </div>
@@ -306,10 +339,6 @@
 
 
 <!-- /*關於我們*/ -->
-
-
-
-
     <section class="content aboutus" id="about_us">
         <div class="main_content">
   
@@ -510,30 +539,33 @@
 
 
 <!-- footer -->
-
     <footer>
 
-        <div class="footerlogo">
-         <img src="../logog/logo.png">
-        </div>
-        <div class="contact">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.4678303408245!2d121.54106957942923!3d25.05212798404238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abe6b0446815%3A0xf006dde8c27afcc7!2z57ev6IKyVGliYU1l6ZmE6Kit5Y-w5YyX6IG36KiT5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1628751629785!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          <div>
-            <img src="../icon/position.png" >
-            <p>台北市中山區南京東路三段219號5樓</p>
-          </div>
-
-          <div>
-            <img src="../icon/phone.png" >
-            <p>02-2470-8053</p>
-          </div>
-
-        <div>
-        <img src="../icon/mail.png" >
-        <p>service@tibame.com</p>
-        </div>
+      <div class="footerlogo">
+        <img src="../logog/logo.png">
       </div>
 
+      <div class="contact">
+
+        <div class="aderss">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.4678303408245!2d121.54106957942923!3d25.05212798404238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abe6b0446815%3A0xf006dde8c27afcc7!2z57ev6IKyVGliYU1l6ZmE6Kit5Y-w5YyX6IG36KiT5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1628751629785!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <div>
+            <div>
+              <img src="../icon/position.png" >
+              <p>台北市中山區南京東路三段219號5樓</p>
+            </div>
+
+            <div>
+              <img src="../icon/phone.png" >
+              <p>02-2470-8053</p>
+            </div>
+
+            <div>
+            <img src="../icon/mail.png" >
+            <p>service@tibame.com</p>
+            </div>
+          </div>
+        </div>
 
         <div class="transportation">
           <h3>交通方式</h3>
@@ -543,22 +575,25 @@
           <p>建國北路二段、民生東路三段和復興北路前往南京東路三段於南京東路三段向右轉</p>
         </div>
 
-        <div class="sitemap">
+      </div>
 
-          <h3><a href="./shop_living.html">online shop</a></h3>
-            <a href="./shop_living.html">居家生活</a>
-            <a href="./shop_stationery.html">文具書本</li>
-            <a href="./shop_living.html">餐廚食具</a>
-            <a href="./shop_living.html">飾品</a>
-            <a href="./shop_living.html">藝術家/工藝品牌</a>
 
-        </div>
-        <div class="aboutus">
-        <h3><a href="./aboutus.html">about us</a></h3>
-          <a href="./aboutus.html" target="_blank">品牌精神</a>
-          <a href="./aboutus.html">合作品牌</a>
-          <a href="./aboutus.html">藝術家/工藝品牌</a>
-          <a href="./aboutus.html">徵才資訊</a>
+      <div class="sitemap">
+
+        <h3><a href="./shop_living.html">online shop</a></h3>
+          <a href="./shop_living.html">居家生活</a>
+          <a href="./shop_stationery.html">文具書本</li>
+          <a href="./shop_living.html">餐廚食具</a>
+          <a href="./shop_living.html">飾品</a>
+          <a href="./shop_living.html">藝術家/工藝品牌</a>
+
+      </div>
+      <div class="aboutus">
+      <h3><a href="./aboutus.html">about us</a></h3>
+        <a href="./aboutus.html" target="_blank">品牌精神</a>
+        <a href="./aboutus.html">合作品牌</a>
+        <a href="./aboutus.html">藝術家/工藝品牌</a>
+        <a href="./aboutus.html">徵才資訊</a>
 
       </div>
       <div class="follow">
@@ -566,16 +601,111 @@
         <a href="https://www.facebook.com/"><img src="../icon/facebook.png" ></a>
         <a href="https://www.instagram.com/"><img src="../icon/inst.png" ></a>
       </div>
+      
+      
     </footer>
 
-   <p class="tibame">本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，本平台僅供學習、展示之用。參考資源:XXXXXXXXXXXXX。若有侵權疑慮，您可以私訊[TibaMe-前端設計工程師養成班]，後續會由專人協助處理 </p>
+   <p class="tibame">本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，本平台僅供學習、展示之用。參考資源:30select/食時商行/Pinkoi。若有侵權疑慮，您可以私訊[TibaMe-前端設計工程師養成班]，後續會由專人協助處理 </p>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
    <script src="https://kit.fontawesome.com/62d00dd306.js" crossorigin="anonymous"></script>
    <script type="text/javascript" src="../slick/slick.min.js"></script>
-    <script src="../js/dropdownlist.js"></script>
+   <script src="../js/dropdownlist.js"></script>
+    <!--gsap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>   
+    <!-- scrolltrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+
+   <script>
+     //===Gsap====//
+gsap.from('a.card',{
+  
+  y : 500,
+  duration: 1.5,
+  stagger:0.2,
+  opacity:0,
+  scrollTrigger:{
+      //物件
+      trigger:'.event',
+      
+      //參考線出現與否
+      // markers: true,
+      //物件的觸發點 / 瀏覽器的觸發點
+      start : '-200px center',
+      //物件的觸發點 / 瀏覽器的結束點
+      end : 'bottom bottom',
+
+      }
+ });
+
+
+
+  gsap.from('div.container article:nth-child(odd)',{
+    x:-1000,
+    duration:1.5,
+    stagger:0.5,
+
+    scrollTrigger:{
+    trigger:'div.container',
+    // markers:true,
+    start : '-100px center',
+    end: 'bottom bottom',
+  }
+  });
+
+ gsap.from('div.container article:nth-child(even)',{
+  x:1000,
+  duration:1.5,
+  stagger:0.5,
+
+  scrollTrigger:{
+    trigger:'div.container',
+    // markers:true,
+    start : '-100px center',
+    end: 'bottom bottom',
+  }
+
+ });
+
+
+
+ gsap.from('.main_content_aboutus',{
+  x:600,
+  duration:1.5,
+  opacity:0,
+
+  scrollTrigger:{
+    trigger:'#about_us',
+    // markers:true,
+    start: 'top center',
+
+  }
+
+ });
+
+ gsap.from('.history_maincontent div',{
+  y:600,
+  duration:1,
+  opacity:0,
+  stagger: .2,
+  scrollTrigger:{
+    trigger:'.history',
+    markers:true,
+    start: 'top bottom',
+    end:'bottom top',
+    scrub : 1,
+    
+
+  }
+ });
+
+   </script>
+
    <script type="text/javascript">
 
+
+
+//====輪播圖===//
    $('.autoplay').slick({
    slidesToShow: 1,
    slidesToScroll: 1,

@@ -20,9 +20,9 @@
 
 section.aboutus{
     background-image: url("../images/content_about us shop.jpg");
+    background-attachment: fixed;
     background-position: center center;
     background-size: contain;
-    margin-top: 0px;
     width: 100%;
     padding:10% 0 ;
   }
@@ -60,15 +60,15 @@ section.aboutus{
   .main_content_aboutus p{
     
     width: 100%;
-    font-family:"serif.light";
+    font-family:serif;
     font-weight: bold;
     font-size: 1.2rem;
-    color: black;
+    color: #525252;
     letter-spacing: 0.1px;
     line-height: 1.7;
   }
   .main_content_aboutus h2,.main_content_aboutus h1{
-   font-family:"serif.black";
+   font-family:serif;
    color: rgba(34, 50, 110, 1);
    margin-bottom: 10px;
    letter-spacing: 2px;
@@ -204,7 +204,7 @@ section.aboutus{
   
   .history_maincontent div ul{
     /* border: 1px solid blueviolet; */
-    color:black;
+    color: #2e2e2e;
     font-size: 1.5rem;
     list-style:inside;
     width: 70%;
@@ -223,7 +223,7 @@ section.aboutus{
   
   .history_maincontent div ul p{
     
-    color: black;
+    color:  #525252;;
     font-family: serif;
     font-weight: bold;
     font-size: 1.2rem;
@@ -235,8 +235,8 @@ section.aboutus{
     }
     .history_maincontent div ul p{
     text-indent: 2rem;
-    color: black;
-    font-family: "serif.light";
+    color: #525252;
+    font-family: serif;
     font-weight: bold;
     font-size: 1.2rem;
    }

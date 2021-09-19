@@ -43,7 +43,8 @@ div.autoplay{
   }
 
 .slide h1{
-  font-size: 1.5rem;
+  font-size: 2rem;
+  padding: 10px;
   background: rgba(217, 217, 214, 0.8);
   color:white;
   position: absolute;
@@ -120,7 +121,7 @@ button.slick-next{
 div.event{
   display: flex;
   flex-direction: column;
-  /* border:1px solid purple; */
+  /* border:2px solid purple; */
 }
 
 
@@ -163,7 +164,7 @@ div.main_content{
   transform-origin: center;
   text-align: center;
   padding-top: 20px;
-  font-family: "serif.black";
+  font-family: serif;
   vertical-align: middle;
   transform: scale(80%);
   transition: transform .2s;
@@ -213,7 +214,9 @@ div.main_content{
 }
 
 div.eve{
-  font-family: "serif.light";
+  color: #2E2E2E;
+  font-family: serif;
+  font-weight: bold;
   line-height: 1.6;
   text-align: left;
   padding: 10px;
@@ -229,7 +232,7 @@ div.eve{
 
 @media screen and (max-width:767px){
   div.eve{
-
+  
   display: flex;
   flex-direction: column;
   position: static;
@@ -241,6 +244,7 @@ div.eve{
 }
 
 .other_notes{
+  color: #2E2E2E;
   height: 100%;
   justify-content: center;
   /* border: 1px solid red; */
@@ -251,7 +255,7 @@ div.eve{
 }
 
 .eve .hint_text{
-  font-family: "serif.black";
+  font-family: serif;
   font-size: 1.3rem;
 }
 @media screen and (max-width:767px){
@@ -261,7 +265,7 @@ div.eve{
 }
 
 .eve .eve_sign_up{
-font-family: "serif.black";
+font-family: serif;
 align-self: flex-end;
 display: inline-flex;
  /* border: 1px solid blue; */
@@ -287,13 +291,14 @@ display: inline-flex;
 /* ==========================文章 ========================== */
 .container{
   display: block;
+  overflow: hidden;
 }
 
 
 section.content{
  display: flex;
  flex-direction: column;
- margin: 0 auto;
+ margin: 0 auto 100px auto;
  /* border: 2px solid green; */
 }
 
@@ -312,11 +317,9 @@ section.content{
    height: 20px;;
    padding: 10px;
    letter-spacing: 1rem;
-   border-top: 5px solid white;
-   border-bottom: 5px solid white;
    display: flex;
    color: rgba(34, 50, 110, 1);
-   font-family: "serif.black";
+   font-family: serif;
    text-align: center;
    justify-content: center;
 }
@@ -326,8 +329,8 @@ section.content{
 }
 
 .hgtitle p{
-   font-size: 1.2rem;
-   font-family: "serif.light";
+   font-size: 1rem;
+   font-family: serif;
    display: flex;
    align-self: center;
 }
@@ -373,11 +376,11 @@ section.content{
 section.content article {
    display: inline-flex;
    width: 70%;
-   color: white;
+   color: #2E2E2E;
    /* border: 1px solid orange; */
    align-items: center;
    margin: 10px 40px;
-   background-color: rgba(171, 140, 117,0.8);
+   background-color: rgb(217,217,214);
    overflow: hidden;
 }
 
@@ -407,19 +410,20 @@ section.content article div{
 }
 
 section.content > article > div h1{
+ white-space: pre-line;
  width: 90%;
  text-align: center;
- border-top:1px solid white;
- border-bottom: 1px solid white;
- font-family: "serif.black";
+ border-bottom: 2px dotted white;
+ font-family: serif;
  font-size: 1.5rem;
  margin: 20px auto;
+ padding-bottom: 20px ;
  /* border: 1px solid black; */
 }
 
 section.content article > div p{
 
- font-family: "serif.light";
+ font-family: serif;
  font-size: 1.2rem;
  /* border: 1px solid black; */
  display: -webkit-box;
@@ -435,22 +439,24 @@ section.content article > div p{
 
 /* ====================seemore================ */
  a.seemore{
-  color: aliceblue;
+  color: #525252;
   cursor: pointer;
-  display: flex;
+  display: inline-flex;
+  width: 100px;
+  align-self: flex-end;
   border: none;
   background: none;
   justify-content: right;
-  font-family: "serif.black";
+  font-family: serif;
   text-align: right;
-  border-radius: 10px;
   padding: 10px;
-  transition: font-size .8s;
-
+  background-image:linear-gradient(to right, rgba(171, 140, 117,0.8), rgb(217,217,214));
+  transition: width 1s;
 }
 a.seemore:hover{
-  color: rgb(198, 53, 39);
-  font-size: 1.2rem;
+  width: 100%;
+  font-size: 1rem;
+
 }
 
 @media screen and (max-width:767px){
@@ -466,14 +472,11 @@ a.seemore:hover{
 }
 
 @media screen and (min-width:767px){
-  section.content article:nth-child(2){
+  section.content article:nth-child(2n){
    flex-flow: row-reverse;
    align-self: flex-end;
   }
-  section.content article:nth-child(4){
-   flex-flow: row-reverse;
-   align-self: flex-end;
-  }
+
 }
 
 

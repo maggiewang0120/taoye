@@ -10,7 +10,7 @@ body{
 }
 
 @font-face{
-font-family: "serif.black";
+font-family: serif;
 src: url("../../fonts/NotoSerifTC-Black.otf");
 font-display: block;
 }
@@ -25,18 +25,18 @@ a{
   color:rgba(34, 50, 110, 1);
 }
 p{
-  font-family: "serif.light";
-
+  font-family: serif;
+  line-height:1.5em;
   font-size: 1rem;
 }
 
 h2{
-  font-family: "serif.light";
+  font-family: serif;
   font-size: 1.2rem;
 }
 
 h1{
-  font-family: "serif.black";
+  font-family: serif;
   font-weight: bold;
   font-size: 2rem;
 

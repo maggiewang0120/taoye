@@ -115,7 +115,40 @@
           </div>
           
         </article>
-
+        <article class="forgot_password_content">
+          <button class="close" type="button">
+              
+            <span class="-hr -top"></span>
+            <span class="-hr -bottom"></span>
+          </button>
+          <div class="forgot_password">
+              <div>
+                <div class="logo">
+                  <img src="../logog/logo.svg">
+                </div>
+      
+                <h1>重新設定密碼</h1>
+                <div class="reset_hint">
+                  <p>請輸入你註冊時的 Email，我們會發送一封信件，點擊信件中的連結以重設密碼。
+                  找不到認證信時，請到「垃圾信件」分類查找，或在信箱搜尋「陶冶」。</p>
+               </div>
+            </div>
+      
+            <form action="">
+                <input type="text" id="" placeholder="電子郵件" value=""></label>
+                
+                <button type="submit">發送認證信</button>
+      
+            </form>
+      
+            <div class="hint">
+              
+              <p id="return">返回上一頁</p>
+              <p>還不是會員嗎？<a href="button">立刻註冊新帳號</a></p>     
+            </div>
+         </div>
+      
+        </article>
 
       </div>
 
@@ -336,28 +369,33 @@
 
 
       <footer>
-          <div class="footerlogo">
-           <img src="../logog/logo.svg">
-          </div>
-          <div class="contact">
+
+        <div class="footerlogo">
+          <img src="../logog/logo.png">
+        </div>
+  
+        <div class="contact">
+  
+          <div class="aderss">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.4678303408245!2d121.54106957942923!3d25.05212798404238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abe6b0446815%3A0xf006dde8c27afcc7!2z57ev6IKyVGliYU1l6ZmE6Kit5Y-w5YyX6IG36KiT5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1628751629785!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             <div>
-              <img src="../icon/position.png" >
-              <p>台北市中山區南京東路三段219號5樓</p>
+              <div>
+                <img src="../icon/position.png" >
+                <p>台北市中山區南京東路三段219號5樓</p>
+              </div>
+  
+              <div>
+                <img src="../icon/phone.png" >
+                <p>02-2470-8053</p>
+              </div>
+  
+              <div>
+              <img src="../icon/mail.png" >
+              <p>service@tibame.com</p>
+              </div>
             </div>
-
-            <div>
-              <img src="../icon/phone.png" >
-              <p>02-2470-8053</p>
-            </div>
-
-          <div>
-          <img src="../icon/mail.png" >
-          <p>service@tibame.com</p>
           </div>
-        </div>
-
-
+  
           <div class="transportation">
             <h3>交通方式</h3>
             <h4>捷運</h4>
@@ -365,30 +403,35 @@
             <h4>自行開車</h4>
             <p>建國北路二段、民生東路三段和復興北路前往南京東路三段於南京東路三段向右轉</p>
           </div>
-
-          <div class="sitemap">
-
-            <h3><a href="#">online shop</a></h3>
-              <a href="#">居家生活</a>
-              <a href="#">文具書本</a>
-              <a href="#">餐廚食具</a>
-              <a href="#">飾品</a>
-              <a href="#">藝術家/工藝品牌</a>
-
-          </div>
-          <div class="aboutus">
-          <h3><a href="#">about us</a></h3>
-            <a href="http://yahoo.com" target="_blank">品牌精神</a>
-            <a href="http://yahoo.com">合作品牌</a>
-            <a href="http://yahoo.com">藝術家/工藝品牌</a>
-            <a href="http://yahoo.com">徵才資訊</a>
-
+  
+        </div>
+  
+  
+        <div class="sitemap">
+  
+          <h3><a href="./shop_living.html">online shop</a></h3>
+            <a href="./shop_living.html">居家生活</a>
+            <a href="./shop_stationery.html">文具書本</li>
+            <a href="./shop_living.html">餐廚食具</a>
+            <a href="./shop_living.html">飾品</a>
+            <a href="./shop_living.html">藝術家/工藝品牌</a>
+  
+        </div>
+        <div class="aboutus">
+        <h3><a href="./aboutus.html">about us</a></h3>
+          <a href="./aboutus.html" target="_blank">品牌精神</a>
+          <a href="./aboutus.html">合作品牌</a>
+          <a href="./aboutus.html">藝術家/工藝品牌</a>
+          <a href="./aboutus.html">徵才資訊</a>
+  
         </div>
         <div class="follow">
           <h3>關注我們</h3>
           <a href="https://www.facebook.com/"><img src="../icon/facebook.png" ></a>
           <a href="https://www.instagram.com/"><img src="../icon/inst.png" ></a>
         </div>
+        
+        
       </footer>
 
      <p class="tibame">本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，本平台僅供學習、展示之用。參考資源:XXXXXXXXXXXXX。若有侵權疑慮，您可以私訊[TibaMe-前端設計工程師養成班]，後續會由專人協助處理 </p>
@@ -412,7 +455,7 @@
                 $("button.btn_drawer").on("click", function(){
                   
                   $(this).closest("aside.aside").toggleClass("-on");
-                  console.log(this);
+                  // console.log(this);
 
                   $("button.btn_drawer, span").toggleClass("-close");
                 })

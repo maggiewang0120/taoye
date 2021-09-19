@@ -13,8 +13,10 @@ div.blog_container{
   align-self: end;
   width: 15%;
   min-width: 180px; 
-  /* border: 1px solid red; */
-  font-family: "GwmFontSB";
+  border: 1px solid red;
+  
+  font-family: serif;
+  font-weight: bold;
   color: rgba(34, 50, 110, 1);
   padding: 5px;
   outline: none;
@@ -25,7 +27,7 @@ div.blog_container{
   
 }
 div.blog_container main{
-  border: 1px solid green;
+  /* border: 1px solid green; */
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
@@ -40,9 +42,8 @@ div.blog_container main article {
   border-radius: 10px;
   display: inline-flex;
   flex-direction: column;
-  /* height: 280px; */
   color: lightblack;
-  width: 80%;
+  width: 70%;
   height: auto;
   margin: 80px auto;
   
@@ -54,7 +55,7 @@ div.blog_container article div{
   flex-flow: column;
   justify-content: flex-start;
   /* border: 1px solid blue; */
-  width: 100%;
+  width: 90%;
 }
 
 div.blog_container  article h1{
@@ -63,7 +64,7 @@ div.blog_container  article h1{
   color: rgb(41, 43, 44);
   background-color:white;
   display: block;
-  font-family: "serif.black";
+  font-family: serif;
   font-size: 2rem;
   margin: 20px 0;
   border-left: 4px solid rgba(34, 50, 110, 1); 
@@ -87,9 +88,9 @@ div.blog_container  article  div p:first-child{
 
 div.blog_container  article  div p{
   
-  font-family: "serif.light";
+  font-family: serif;
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   /* border: 1px solid rgb(73, 71, 71); */
   text-indent:2rem;
   letter-spacing: 0.3px;
@@ -119,7 +120,7 @@ article a{
 }
 article a img{
   vertical-align: bottom;
-  border: 1px solid rgb(250, 189, 189);
+  /* border: 1px solid rgb(250, 189, 189); */
   width: 100%;
   font-size: 0;
 }

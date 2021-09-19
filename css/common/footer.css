@@ -1,11 +1,9 @@
 
  footer{
-  /* flex-shrink: 0; */
   display: flex;
   flex-direction: row;
-  padding: 30px ;
+  padding: 20px ;
   line-height: 1.4;
-  /* height: 400px; */
   background-color: rgb(34, 50, 110, 1);
   margin-bottom: 10px;
   color: white;
@@ -19,6 +17,27 @@
   }
 }
 
+div.contact{
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  
+}
+div.contact div.aderss{
+  width: 100%;
+  gap: 10px;
+  /* border: 1px solid lightblue; */
+  display: inline-flex;
+  flex-direction: row;
+  
+}
+div.contact div.aderss div{
+  /* border: 1px solid lightpink; */
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+}
 
 div.contact div img{
   width: 20px;
@@ -29,6 +48,7 @@ div.contact div img{
 div.footerlogo{
   width: 100px;
 }
+
 @media screen and (max-width:767px){
   div.footerlogo{
     display: none;
@@ -36,21 +56,22 @@ div.footerlogo{
 }
 
 footer > div{
-  /* border: 1px solid white; */
-  width:230px;
+  border: 1px solid white;
+  width:20%;
   display: flex;
-  margin-left: 15px;
   flex-direction: column;
-  /* overflow: hidden; */
-  /* text-align: center; */
 }
 
 @media screen and (max-width:767px){
+
   footer > div{
     display: flex;
     width: 100%;
     border-bottom: 1px solid white;
     margin-bottom: 10px;
+  }
+  div.contact{
+    width: 100%;
   }
   footer > div:last-child{
     border-bottom: none;
@@ -58,7 +79,7 @@ footer > div{
 }
   iframe{
   height: 180px;
-  width: 200px;
+  width: 40%;
 }
 
 
@@ -75,7 +96,8 @@ footer div h3,div h3{
 
   footer div,footer div h3,div h3,div h4 {
     font-size: 1.2rem;
-    font-family: "serif.black";
+    font-family: serif;
+    font-weight: bold;
   }
 
 }
@@ -85,17 +107,20 @@ footer div h3,div h3{
 footer > div p,footer > div a{
   text-align: left;
   margin-bottom: 15px;
-  text-decoration: none;
   /* border: 1px solid white; */
   color: white;
   font-size: 1rem;
   cursor: pointer;
 }
+footer > div a:hover{
+  color: rgb(161, 37, 37);
+}
+
 @media screen and (max-width:767px){
 
   footer > div p,footer > div a{
     font-size: 1rem;
-    font-family: "serif.light"
+    font-family: serif;
   }
 
 }
@@ -113,6 +138,6 @@ p.tibame{
   margin-bottom:10px;
   text-align: center;
   line-height: 1.4;
-  font-family: "serif.light";
-  font-size: 0.5rem;
+  font-family: serif;
+  font-size: 1rem;
 }

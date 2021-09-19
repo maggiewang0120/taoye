@@ -1,4 +1,4 @@
-
+@import "./all.css";
 
 
 body{
@@ -17,13 +17,12 @@ div.header{
   position: sticky;
   z-index: 110;
   top:0;
-  
+  padding: 10px;
 }
 
 
 div.header.-scroll-down{
   flex-direction: row;
-  padding-left: 20px;
   box-shadow: 1px 1px 2px grey;
 }
 
@@ -123,7 +122,7 @@ a.logo img{
 span.title{
   letter-spacing: 1.5px;
   font-size: 1rem;
-  font-family: "serif.black";
+  font-family: serif;
   font-weight: bold ;
   text-align: center;
   justify-content: center;
@@ -131,7 +130,8 @@ span.title{
   position: relative;
   display: flex;
   width:20%;
-  /* transition-duration: 0.2s; */
+  height: 100%;
+  transition-duration: 0.2s;
 }
 @media screen and (max-width:767px){
   span.title{
@@ -219,13 +219,15 @@ span.title{
 }
 
 .title a span{
-  font-size: 0.8rem;
+  font-size: 0.rem;
 }
-@media screen and (min-width:767px){
+
+@media screen and (max-width:767px){
   .title a span{
-    font-size: 0.2rem;
+    font-size: 1rem;
 
   }
+  
 }
 
 
@@ -234,7 +236,7 @@ span.title > ul {
   margin-bottom: 0;
   /* border: 1px solid black; */
   white-space: nowrap;
-  top: 45px;
+  top: 100%;
   left: 0;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 10px ;
@@ -270,7 +272,7 @@ span.title > ul {
 
 
   span.title ul li a{
-    font-family: "serif.light";
+    font-family: serif;
     font-size: 1rem;
   }
 
@@ -289,7 +291,7 @@ span.title > ul {
   }
 
 
-
+  
     .sign_up article{
       padding: 30px;
       background-color: rgb(217, 217, 214);
@@ -298,14 +300,19 @@ span.title > ul {
       top: 50%;
       left:50%;
       transform: translate(-50%, -50%);
-      
-      width: 500px;
-      max-width: 100%;
+      max-width: 50%;
+      max-height:100% ;
       display: flex;
       flex-direction: column;
+      overflow:scroll;
       align-items: center;
     }
-
+   
+    @media (max-width:767px) {
+      .sign_up article{
+        min-width: 90%;
+      }
+    }
     .sign_up article button.close{
       position: absolute;
       top: 10px;
@@ -314,13 +321,15 @@ span.title > ul {
       /* border: none; */
       
     }
-
-    article.sign_up_content button{
+    .sign_up article button{
       position: relative;
       width: 25px;
       height: 25px;
       border: none;
       cursor: pointer;
+    }
+    .sign_up article button:hover{
+      background-color:whitesmoke;
     }
     .sign_up article div h1{
       display: flex;
@@ -328,30 +337,62 @@ span.title > ul {
       width: 100%;
       justify-content: center;
     }
-    article.sign_up_content div p{
-      
+    .sign_up article div p{
+      /* border: 1px solid plum; */
+      text-align: center;
+      width: 80%;
       margin: 10px 0;
       
     }
-    article.sign_up_content div{
+    article.sign_up_content{
+
       display: flex;
       flex-direction: column;
       align-items: center;
       width: 100%;
       /* border: 1px solid plum; */
-      font-family: "serif.light";
+      font-family: serif;
       margin: 10px 0;
-
+      display: none;
     }
 
-    article.sign_up_content div .btn_return{
+    
+    article.forgot_password_content{
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      /* border: 1px solid rgb(138, 7, 138); */
+      font-family: serif;
+      margin: 10px 0;
+      display: none;
+    }
+    div.reset_hint{
+      /* border: 1px solid cadetblue; */
+      width: 90%;
+    }
+    div.reset_hint p{
+      text-align:left;
+      white-space:pre-line;
+
+    }
+    .sign_up article div #return{
       cursor: pointer;
     }
-
-    article.sign_up_content div.logo{
+    .sign_up article div.hint p:hover{
+      color: rgb(194, 31, 3);
+      
+    }
+    .sign_up article div{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       /* border: 1px solid orange; */
-      max-width: 30%;
-      font-size: 0;
+      width: 100%;
+    }
+    .sign_up article div.logo{
+      width: 30%;
     }
 
     button.close span.-hr{
@@ -382,7 +423,7 @@ span.title > ul {
   }
 
   .sign_up article form label{
-    font-family: "serif.black";
+    font-family: serif;
     font-size: 1rem;
     display: flex;
     
@@ -393,8 +434,7 @@ span.title > ul {
     justify-content: center;
   }
   .sign_up article form input{
-    font-family: "serif.light";
-    
+    font-family: serif;
     margin: 10px 0;
     width: 70%;
     height: 40px;
@@ -404,7 +444,7 @@ span.title > ul {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    font-family: "serif.black";
+    font-family: serif;
     font-size: 1rem;
     padding: 20px;
     width: 70%;
@@ -418,7 +458,7 @@ span.title > ul {
   span.title ul li a.options:hover{
   text-decoration: underline;
   color: rgb(198 53 39);
-  font-family: "serif.light";
+  font-family: serif;
   }
 
   span.title ul li{
@@ -449,7 +489,7 @@ span.title > ul {
     align-items:center;
   }
   .search input{
-    font-family: "serif.black";
+    font-family: serif;
     width: 80%;
     margin-right: 10px;
   }
@@ -479,7 +519,7 @@ span.title > ul {
   }
 
   .search_scrolldown input{
-    font-family: "serif.black";
+    font-family: serif;
     width: 60%;
     height: 90%;
   }
