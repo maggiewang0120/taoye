@@ -39,9 +39,10 @@ div.header.-scroll-down{
 
 
 a.logo{
-  /* border: 1px solid red; */
+  border: 1px solid red;
   display: flex;
-
+  width: 40%;
+  margin: 0 auto;
   /* font-size: 0; */
 }
 
@@ -49,22 +50,22 @@ a.logo{
 
 @media screen and (max-width:767px){
   div.top{
-
-    height: 100%;
+    width: 20%;
+    height: 20%;
     /* border: 1px solid green; */
     padding: 0;
   }
 
   a.logo{
-    /* border: 1px solid yellow; */
-    width: 50%;
+    border: 1px solid yellow;
+    width: 80%;
     margin: 0 auto;
   }
 }
 
 a.logo img{
-  width: 100px;
-  /* border: 1px solid red; */
+  width: 100%;
+  border: 1px solid red;
   padding: 0;
 }
 
