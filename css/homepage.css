@@ -164,7 +164,7 @@ div.main_content{
   transform-origin: center;
   text-align: center;
   padding-top: 20px;
-  font-family: serif;
+  font-family: "serif";
   vertical-align: middle;
   transform: scale(80%);
   transition: transform .2s;
@@ -215,7 +215,7 @@ div.main_content{
 
 div.eve{
   color: #2E2E2E;
-  font-family: serif;
+  font-family: "serif";
   font-weight: bold;
   line-height: 1.6;
   text-align: left;
@@ -255,7 +255,7 @@ div.eve{
 }
 
 .eve .hint_text{
-  font-family: serif;
+  font-family: "serif";
   font-size: 1.3rem;
 }
 @media screen and (max-width:767px){
@@ -265,7 +265,7 @@ div.eve{
 }
 
 .eve .eve_sign_up{
-font-family: serif;
+font-family: "serif";
 align-self: flex-end;
 display: inline-flex;
  /* border: 1px solid blue; */
@@ -319,7 +319,7 @@ section.content{
    letter-spacing: 1rem;
    display: flex;
    color: rgba(34, 50, 110, 1);
-   font-family: serif;
+   font-family: "serif";
    text-align: center;
    justify-content: center;
 }
@@ -330,7 +330,7 @@ section.content{
 
 .hgtitle p{
    font-size: 1rem;
-   font-family: serif;
+   font-family: "serif";
    display: flex;
    align-self: center;
 }
@@ -414,7 +414,7 @@ section.content > article > div h1{
  width: 90%;
  text-align: center;
  border-bottom: 2px dotted white;
- font-family: serif;
+ font-family: "serif";
  font-size: 1.5rem;
  margin: 20px auto;
  padding-bottom: 20px ;
@@ -423,7 +423,7 @@ section.content > article > div h1{
 
 section.content article > div p{
 
- font-family: serif;
+ font-family: "serif";
  font-size: 1.2rem;
  /* border: 1px solid black; */
  display: -webkit-box;
@@ -447,7 +447,7 @@ section.content article > div p{
   border: none;
   background: none;
   justify-content: right;
-  font-family: serif;
+  font-family: "serif";
   text-align: right;
   padding: 10px;
   background-image:linear-gradient(to right, rgba(171, 140, 117,0.8), rgb(217,217,214));

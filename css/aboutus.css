@@ -25,7 +25,6 @@ section.aboutus{
     background-size: contain;
     width: 100%;
     padding:10% 0 ;
-    overflow: hidden;
   }
   
   
@@ -44,6 +43,8 @@ section.aboutus{
     border-radius: 10px;
     background-color: rgb(217, 217, 214, 0.9);
     text-align: center;
+    overflow: hidden;
+
   }
   
   
@@ -61,7 +62,7 @@ section.aboutus{
   .main_content_aboutus p{
     
     width: 100%;
-    font-family:serif;
+    font-family:"serif";
     font-weight: bold;
     font-size: 1.2rem;
     color: #525252;
@@ -69,7 +70,7 @@ section.aboutus{
     line-height: 1.7;
   }
   .main_content_aboutus h2,.main_content_aboutus h1{
-   font-family:serif;
+   font-family:"serif";
    color: rgba(34, 50, 110, 1);
    margin-bottom: 10px;
    letter-spacing: 2px;
@@ -210,7 +211,7 @@ section.aboutus{
     list-style:inside;
     width: 70%;
     white-space:pre-line;
-    font-family: serif;
+    font-family: "serif";
     font-weight: bold;
     text-align: left;
     padding-left: 0mm;
@@ -225,7 +226,7 @@ section.aboutus{
   .history_maincontent div ul p{
     
     color:  #525252;;
-    font-family: serif;
+    font-family: "serif";
     font-weight: bold;
     font-size: 1.2rem;
   }
@@ -237,7 +238,7 @@ section.aboutus{
     .history_maincontent div ul p{
     text-indent: 2rem;
     color: #525252;
-    font-family: serif;
+    font-family: "serif";
     font-weight: bold;
     font-size: 1.2rem;
    }
