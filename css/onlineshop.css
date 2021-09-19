@@ -17,7 +17,7 @@ div.shop_banner_img img{
 div.shop_banner_img div{
   
   /* border: 1px solid red; */
-  font-family: serif;
+  font-family: "serif";
   position: absolute;
   text-transform: uppercase;
   line-height: 1.4;
@@ -66,7 +66,7 @@ div.breadcrumb ol.breadcrumb_list{
   margin: 0;
   padding: 0;
   list-style: none;
-  font-family:serif;
+  font-family:"serif";
 
 }
 div.breadcrumb ol.breadcrumb_list > li{
@@ -108,10 +108,7 @@ div.breadcrumb ol.breadcrumb_list > li > a:hover{
                               
   
                                       /* 商品區 */
-div.parent_container main.main{
-  /* border: 1px solid green; */
-  
-}
+
 
   .grid-container {
   /* border: 1px solid red; */
@@ -154,7 +151,7 @@ div.parent_container main.main{
   
 }
 .grid-item p button{
-  font-family: serif;
+  font-family: "serif";
   font-size: 1rem;
   color: white;
   padding:10px;
@@ -165,7 +162,7 @@ div.parent_container main.main{
   border: none;
   }
 a.grid-item p{
- font-family: serif;
+ font-family: "serif";
  font-size: 1rem;
  width: 100%;
  display: block;

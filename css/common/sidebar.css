@@ -177,7 +177,7 @@
   background-repeat: no-repeat;
   color: white;
   /* border: 1px solid red; */
-  font-family: serif;
+  font-family: "serif";
   font-weight: bold;
   font-size: 1.2rem;
   padding: 5px;
@@ -194,7 +194,7 @@
 
 
   div.parent_container aside.aside div.option{
-  font-family: serif;
+  font-family: "serif";
   font-weight: bold;
   line-height: 2;
   margin: 10px 0;
@@ -207,5 +207,5 @@
   display: inline-block;
   width: 100%;
   background-color: white;
-  font-family: serif;
+  font-family: "serif";
   }

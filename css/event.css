@@ -21,7 +21,7 @@ div.tab_container div.tab_list_block ul.tab_list > li{
   display: inline-block;
 }
 div.tab_container div.tab_list_block ul.tab_list > li > a{
-  font-family: serif;
+  font-family: "serif";
   text-decoration: none;
   display: inline-block;
   /* border: 1px solid rgba(34, 50, 110, 1); */
@@ -106,7 +106,7 @@ div.tab_container div.p div {
   border: 1px solid red;
   width: 60%;
   font-size: 1rem;
-  font-family: serif;
+  font-family: "serif";
   color: rgba(34, 50, 110, 1);
 }
 
@@ -134,7 +134,7 @@ div.tab_container div.p div a.signup{
   justify-content:center;
   width: 20%;
   align-items: flex-end;
-  font-family: serif;
+  font-family: "serif";
   color: white;
   font-size: 1rem;
   border: none;

@@ -42,7 +42,7 @@ main.event_container{
   background-color: rgb(217 217 214);
   color: rgba(34, 50, 110, 1);
   margin:0px 0px 15px 0px;
-  font-family: serif;
+  font-family: "serif";
   font-size: 1.3rem;
 }
 .introduce ul{
@@ -51,7 +51,7 @@ main.event_container{
   padding: 0px;
   list-style: none;
   margin-bottom: 40px;
-  font-family: serif;
+  font-family: "serif";
   font-size: 1rem;
 }
 div.introduce p{
