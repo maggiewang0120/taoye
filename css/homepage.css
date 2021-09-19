@@ -423,7 +423,8 @@ section.content > article > div h1{
 
 section.content article > div p{
 
- font-family: "serif";
+ font-family: "serif.light";
+ font-weight: bolder;
  font-size: 1.2rem;
  /* border: 1px solid black; */
  display: -webkit-box;

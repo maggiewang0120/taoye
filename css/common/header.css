@@ -31,8 +31,8 @@ div.header.-scroll-down{
   div.header{
     display: inline-flex;
     background-color: rgb(217, 217, 214);
-    align-items: flex-start;
-    justify-content:space-around;
+    align-items: flex-end;
+    /* justify-content:space-around; */
     flex-wrap: wrap;
     flex-direction: row;
   }
@@ -152,9 +152,9 @@ span.title{
 @media screen and (max-width:767px){
   .hamburger_icon{
     display: inline-block;
-    border:none;
-    width: 45px;
-    height: 42px;
+    /* border: 1px solid blue; */
+    border: none;
+    width: 10%;
     position: relative;
     cursor: pointer;
     outline: none;
@@ -163,7 +163,7 @@ span.title{
 
    button.hamburger_icon span.-hr{
     height: 2px;
-    width: 100%;
+    width: 80%;
     background-color: rgba(34, 50, 110, 1);
     display: inline-block;
     position: absolute;
@@ -183,9 +183,9 @@ span.title{
 
     button.hamburger_icon.-on span.-hr.-top{
       transform-origin: 0% 50%;
-      top: 5px;
-      left: 5px;
-      width: 100%;
+      top: 4px;
+      left:6px;
+      width: 85%;
       transform: rotate(45deg);
       transition: transform .5s;
     }
@@ -198,9 +198,9 @@ span.title{
 
 
       transform-origin: 0% 50%;
-      bottom: 5px;
+      bottom: 6px;
       left: 5px;
-      width: 100%;
+      width: 85%;
       transform: rotate(-45deg);
       transition: transform .5s;
       top: auto;
@@ -392,6 +392,7 @@ span.title > ul {
       width: 100%;
     }
     .sign_up article div.logo{
+
       width: 30%;
     }
 
@@ -514,7 +515,7 @@ span.title > ul {
     display: flex;
     align-items: flex-end;
     justify-content:right;
-    width:100% ;
+    width:80% ;
     
   }
 
