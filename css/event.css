@@ -51,7 +51,6 @@ div.tab_container div.tab_list_block ul.tab_list > li > a.-on{
 div.tab_container div.tab_contents{
   display: block;
   background-color: rgb(217 217 214);
-  border: 1px solid black;
   margin-top: 0px;
 }
 
@@ -66,7 +65,6 @@ div.tab_container div.tab_contents div.tab.-on{
   flex-direction: column;
   width: 80%;
   gap: 20px;
-  border: 1px solid red;
   margin: 0px auto;
   padding: 20px;
 }
@@ -103,7 +101,6 @@ div.tab_container div.p div {
   display: flex;
   flex-direction: row;
   gap: 20px;
-  border: 1px solid red;
   width: 60%;
   font-size: 1rem;
   font-family: "serif";
@@ -114,14 +111,12 @@ div.tab_container div.p div {
   display: inline-flex;
   width: 10%;
   justify-content: center;
-  border: 1px solid tomato;
   padding: 5px;
   writing-mode:vertical-lr  ;
   /* flex-shrink: 0; */
 
 }
 div.tab_container div.p div p{
-  border: 1px solid green;
   /* display: inline-flex; */
   text-overflow:ellipsis;
   height: 300px;
@@ -135,6 +130,8 @@ div.tab_container div.p div a.signup{
   width: 20%;
   align-items: flex-end;
   font-family: "serif";
+  height: 15%;
+  align-items: center;
   color: white;
   font-size: 1rem;
   border: none;
