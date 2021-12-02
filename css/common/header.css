@@ -513,14 +513,7 @@ span.title > ul {
     display: none;
   }
 
-  .search_scrolldown{
-    border: 1px solid orange;
-    /* display: flex;
-    align-items: flex-end;
-    justify-content:right;
-    width:80% ; */
-    
-  }
+  
 
   .search_scrolldown input{
     font-family: "serif";
