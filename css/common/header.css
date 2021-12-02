@@ -400,6 +400,7 @@ span.title > ul {
       /* border: 1px solid rsed; */
       max-height: 160px;
       width: 30%;
+      margin-bottom: 20px;
     }
 
     button.close span.-hr{
