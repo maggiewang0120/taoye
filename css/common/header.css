@@ -396,7 +396,7 @@ span.title > ul {
     }
     .sign_up article div:nth-child(1){
       border: 1px solid red;
-      min-height: 50px;
+      height: 66px;
     }
     .sign_up article div.logo{
 
