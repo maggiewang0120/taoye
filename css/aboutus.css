@@ -63,9 +63,9 @@ section.aboutus{
   .main_content_aboutus p{
     
     width: 100%;
-    font-family:"serif";
-    font-weight: bold;
-    font-size: 1.2rem;
+    /* font-family:"serif"; */
+    /* font-weight: bold; */
+    font-size: 1rem;
     color: #525252;
     letter-spacing: 0.1px;
     line-height: 1.7;
@@ -208,7 +208,7 @@ section.aboutus{
   .history_maincontent div ul{
     /* border: 1px solid blueviolet; */
     color: #2e2e2e;
-    font-size: 1.5rem;
+    font-size: 1rem;
     list-style:inside;
     width: 70%;
     white-space:pre-line;
@@ -226,10 +226,8 @@ section.aboutus{
   
   .history_maincontent div ul p{
     
-    color:  #525252;;
-    font-family: "serif";
-    font-weight: bold;
-    font-size: 1.2rem;
+    color:  #525252;
+    font-size: 1rem;
   }
   
   @media (max-width:767px) {
@@ -239,9 +237,7 @@ section.aboutus{
     .history_maincontent div ul p{
     text-indent: 2rem;
     color: #525252;
-    font-family: "serif";
-    font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
    }
   }
   

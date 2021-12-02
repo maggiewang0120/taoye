@@ -13,7 +13,7 @@ div.blog_container{
   align-self: end;
   width: 15%;
   min-width: 180px; 
-  border: 1px solid red;
+  /* border: 1px solid red; */
   
   font-family: "serif";
   font-weight: bold;
@@ -43,7 +43,7 @@ div.blog_container main article {
   display: inline-flex;
   flex-direction: column;
   color: lightblack;
-  width: 70%;
+  width: 80%;
   height: auto;
   margin: 80px auto;
   
@@ -80,6 +80,7 @@ div.blog_container  article h1{
 
 
 div.blog_container  article  div p:first-child{
+  font-family: "serif";
   background-color:rgb(255, 255, 255);
   padding: 10px;
   border-left: 4px solid rgba(34, 50, 110, 1); ;
@@ -88,9 +89,9 @@ div.blog_container  article  div p:first-child{
 
 div.blog_container  article  div p{
   
-  font-family: "serif";
-  font-weight: bold;
-  font-size: 1.2rem;
+  /* font-family: "serif"; */
+  font-weight: lighter;
+  font-size: 1rem;
   /* border: 1px solid rgb(73, 71, 71); */
   text-indent:2rem;
   letter-spacing: 0.3px;

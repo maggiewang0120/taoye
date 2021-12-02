@@ -130,7 +130,7 @@ span.title{
   /* border: 1px solid green; */
   position: relative;
   display: flex;
-  width:20%;
+  width:10%;
   height: 100%;
   transition-duration: 0.2s;
 }
@@ -155,7 +155,7 @@ span.title{
     display: inline-block;
     /* border: 1px solid blue; */
     border: none;
-    width: 15%;
+    width: 55px;
     position: relative;
     cursor: pointer;
     outline: none;
@@ -184,7 +184,7 @@ span.title{
 
     button.hamburger_icon.-on span.-hr.-top{
       transform-origin: 0% 50%;
-      top: 10px;
+      top: 5%;
       left:6px;
       width: 85%;
       transform: rotate(45deg);
@@ -199,7 +199,7 @@ span.title{
 
 
       transform-origin: 0% 50%;
-      bottom: 10px;
+      bottom: 5%;
       left: 6px;
       width: 85%;
       transform: rotate(-45deg);
@@ -489,7 +489,7 @@ span.title > ul {
     /* border: 1px solid blue; */
     display: flex;
     justify-content: space-around;
-    width: 30%;
+    width: 5%;
     align-items:center;
   }
   .search input{
