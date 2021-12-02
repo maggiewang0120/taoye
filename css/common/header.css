@@ -394,6 +394,10 @@ span.title > ul {
       /* border: 1px solid orange; */
       width: 100%;
     }
+    .sign_up article div:nth-child(1){
+      border: 1px solid red;
+      min-height: 50px;
+    }
     .sign_up article div.logo{
 
       width: 30%;
