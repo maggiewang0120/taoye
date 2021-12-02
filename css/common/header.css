@@ -314,6 +314,7 @@ span.title > ul {
     @media (max-width:767px) {
       .sign_up article{
         min-width: 90%;
+        padding: 10px;
       }
     }
     .sign_up article button.close{

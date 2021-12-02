@@ -73,6 +73,7 @@ div.product-img{
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
   /* border:1px solid red; */
   transition: all .8s;
 }
@@ -80,13 +81,21 @@ div.product-img{
 @media (max-width:767px) {
   div.product-img{
    max-width: 90%;
+   gap: 20px;
     
   }
+}
+.choose{
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
 }
 .product-img .big-img-container{
   width: 100%;
   justify-content: center;
   display: flex;
+
   /* border: 2px solid pink; */
 
 }
@@ -94,6 +103,7 @@ div.product-img{
   width: 100%;
   /* border: 1px solid yellow; */
   border-radius: 5px;
+  
 }
 
 .product-img .small-imgs{
@@ -114,6 +124,7 @@ div.product-img{
   color:rgba(34, 50, 110, 1);
   width: 50%;
   padding-left: 20px;
+  margin-top:10px;
   text-align: left;
   /* border: 1px solid blue; */
 }
@@ -169,15 +180,16 @@ background-image: url("../icon/solidheart.png");
 
 }
 .product-ifo a.buy{
-  display: inline-block;
+  display: flex;
   font-family: "GwmFontR";
   color: white;
   border-radius: 10px;
+  align-items: center;
   padding: 15px;
   background-color: rgb(171 140 117);
   box-shadow: 2px 1px 4px white inset,1px 1px 3px grey;
-  /* margin-top: 20px; */
-  margin-left: 80px;
+  height: 25px;
+ 
 }
 
 .product-ifo img{
@@ -205,8 +217,8 @@ background-image: url("../icon/solidheart.png");
   background-color:white;
   border-radius: 10px;
   box-shadow: 1px 1px 1px ;
-  margin-top: 50px;
-  margin-left: 30px;
+  /* margin-top: 50px; */
+ 
 }
 
 .product_article{
@@ -309,10 +321,10 @@ p.Gao{
   font-size: 1.2rem;
   text-align: left;
   /* border: 1px solid black; */
-  position: absolute;
+  /* position: absolute;
   top: 40%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%); */
   width: 100%;
 }
 div.related{
