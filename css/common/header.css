@@ -63,7 +63,7 @@ a.logo img{
 
   a.logo{
     /* border: 1px solid yellow; */
-    width: 50%;
+    min-width: 45px;
     margin: 0 auto;
   }
 }
@@ -104,6 +104,8 @@ a.logo img{
     width:70%;
     display: flex;
     flex-direction: row;
+    justify-content:space-between;
+
   }
 
   .global_nav{
@@ -153,7 +155,7 @@ span.title{
     display: inline-block;
     /* border: 1px solid blue; */
     border: none;
-    width: 10%;
+    width: 15%;
     position: relative;
     cursor: pointer;
     outline: none;
@@ -182,7 +184,7 @@ span.title{
 
     button.hamburger_icon.-on span.-hr.-top{
       transform-origin: 0% 50%;
-      top: 5px;
+      top: 10px;
       left:6px;
       width: 85%;
       transform: rotate(45deg);
@@ -197,7 +199,7 @@ span.title{
 
 
       transform-origin: 0% 50%;
-      bottom: 5px;
+      bottom: 10px;
       left: 6px;
       width: 85%;
       transform: rotate(-45deg);
@@ -248,7 +250,7 @@ span.title > ul {
 }
 @media screen and (max-width:767px){
   span.title > ul{
-  width: 50%;
+  width: 65%;
   display: flex;
   flex-direction: column;
   position:  sticky;

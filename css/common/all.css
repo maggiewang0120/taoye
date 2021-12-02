@@ -6,7 +6,7 @@
 body{
 
   background-image: url(../../images/background.png);
-  /* min-width: 850px; */
+  min-width: 375px;
 }
 
 @font-face{
@@ -28,6 +28,14 @@ p{
   font-family: serif;
   line-height:1.5em;
   font-size: 1rem;
+}
+@media screen and (max-width:768px){
+  p{
+    font-family: serif;
+    line-height:1.5em;
+    font-size: 1rem;
+    font-weight: 300;
+  }
 }
 
 h2{
