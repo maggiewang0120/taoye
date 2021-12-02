@@ -514,11 +514,11 @@ span.title > ul {
   }
 
   .search_scrolldown{
-    /* border: 1px solid orange; */
-    display: flex;
+    border: 1px solid orange;
+    /* display: flex;
     align-items: flex-end;
     justify-content:right;
-    width:80% ;
+    width:80% ; */
     
   }
 
